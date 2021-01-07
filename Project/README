@@ -1,0 +1,6 @@
+build with CMake
+mkdir build
+cd build
+cmake ../cmake
+make
+# echo binary is in ./bin/

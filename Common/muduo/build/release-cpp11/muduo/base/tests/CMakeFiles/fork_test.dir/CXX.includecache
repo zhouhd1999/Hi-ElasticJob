@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/muduo/muduo/muduo/base/CurrentThread.h
+muduo/base/Types.h
+/root/muduo/muduo/muduo/base/muduo/base/Types.h
+
+/root/muduo/muduo/muduo/base/Types.h
+stdint.h
+-
+string.h
+-
+string
+-
+assert.h
+-
+
+/root/muduo/muduo/muduo/base/tests/Fork_test.cc
+muduo/base/CurrentThread.h
+/root/muduo/muduo/muduo/base/tests/muduo/base/CurrentThread.h
+stdio.h
+-
+sys/types.h
+-
+unistd.h
+-
+
