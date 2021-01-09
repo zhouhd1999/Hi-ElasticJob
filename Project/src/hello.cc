@@ -1,12 +1,8 @@
+#include <acl-lib/acl/lib_acl.h>//acl c 库
+#include <acl-lib/acl_cpp/lib_acl.hpp>// acl c++ 库
 
-#include "./base/ConfigManager.h"
-#include "./base/DBManager.h"
-
-using namespace base;
-
-int main(int argc, char *argv[])
-{
-    ConfigManager::Instance().InitManager();
-    DBConfigParam param = ConfigManager::Instance().GetDBParam();
-    DBConnManager::Instance().InitDBConnManager(param);
+int main() {
+      acl::string addr = "10.110.120.23";
+      printf("addr is %s", addr.c_str());
+      return 0;
 }
