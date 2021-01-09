@@ -4,6 +4,8 @@
 CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o
  /root/cpp/Common/muduo/build/release-install-cpp11/include/muduo/base/noncopyable.h
  /root/cpp/Project/src/base/ConfigManager.h
+ /root/cpp/Project/src/base/DBBaseConn.h
+ /root/cpp/Project/src/base/DBConnPool.h
  /root/cpp/Project/src/base/DBManager.h
  /root/cpp/Project/src/base/Singleton.h
  /root/cpp/Project/src/base/examples/DBTest.cc

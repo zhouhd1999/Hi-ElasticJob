@@ -26,11 +26,10 @@ namespace base
 
         void destroy(mysqlpp::Connection* cp) override;
 
-        unsigned int max_idle_time();
+        unsigned int max_idle_time() override;
 
     private:
         unsigned int conns_in_use_;
-
         std::string db_, server_, user_, password_;
     };
 }

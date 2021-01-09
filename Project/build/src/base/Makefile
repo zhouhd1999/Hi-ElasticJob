@@ -152,6 +152,60 @@ ConfigManager.cc.s:
 	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/ConfigManager.cc.s
 .PHONY : ConfigManager.cc.s
 
+DBBaseConn.o: DBBaseConn.cc.o
+
+.PHONY : DBBaseConn.o
+
+# target to build an object file
+DBBaseConn.cc.o:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/DBBaseConn.cc.o
+.PHONY : DBBaseConn.cc.o
+
+DBBaseConn.i: DBBaseConn.cc.i
+
+.PHONY : DBBaseConn.i
+
+# target to preprocess a source file
+DBBaseConn.cc.i:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/DBBaseConn.cc.i
+.PHONY : DBBaseConn.cc.i
+
+DBBaseConn.s: DBBaseConn.cc.s
+
+.PHONY : DBBaseConn.s
+
+# target to generate assembly for a file
+DBBaseConn.cc.s:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/DBBaseConn.cc.s
+.PHONY : DBBaseConn.cc.s
+
+DBConnPool.o: DBConnPool.cc.o
+
+.PHONY : DBConnPool.o
+
+# target to build an object file
+DBConnPool.cc.o:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/DBConnPool.cc.o
+.PHONY : DBConnPool.cc.o
+
+DBConnPool.i: DBConnPool.cc.i
+
+.PHONY : DBConnPool.i
+
+# target to preprocess a source file
+DBConnPool.cc.i:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/DBConnPool.cc.i
+.PHONY : DBConnPool.cc.i
+
+DBConnPool.s: DBConnPool.cc.s
+
+.PHONY : DBConnPool.s
+
+# target to generate assembly for a file
+DBConnPool.cc.s:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/DBConnPool.cc.s
+.PHONY : DBConnPool.cc.s
+
 DBManager.o: DBManager.cc.o
 
 .PHONY : DBManager.o
@@ -245,6 +299,12 @@ help:
 	@echo "... ConfigManager.o"
 	@echo "... ConfigManager.i"
 	@echo "... ConfigManager.s"
+	@echo "... DBBaseConn.o"
+	@echo "... DBBaseConn.i"
+	@echo "... DBBaseConn.s"
+	@echo "... DBConnPool.o"
+	@echo "... DBConnPool.i"
+	@echo "... DBConnPool.s"
 	@echo "... DBManager.o"
 	@echo "... DBManager.i"
 	@echo "... DBManager.s"

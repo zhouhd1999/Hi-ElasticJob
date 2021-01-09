@@ -6,6 +6,8 @@ if(NOT MUDUO_PATH)
   set(MUDUO_PATH "/root/cpp/Common/muduo/build/release-install-cpp11")
 endif()
 
+add_definitions(-std=c++11)
+
 set(CXX_FLAGS
  -g
  # -DVALGRIND
@@ -66,7 +68,7 @@ target_link_libraries(hello
 )
 
 # 测试用例
-add_executable(DBTest ./src/base/examples/DBTest.cc)
+add_executable(DBTest ./src/base/test/DBTest.cc)
 target_link_libraries(DBTest
   ${muduo_net}
   ${muduo_base}

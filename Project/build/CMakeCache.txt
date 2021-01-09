@@ -175,12 +175,6 @@ Muduo_INCLUDE_DIR:PATH=/root/cpp/Common/muduo/build/release-install-cpp11/includ
 //Path to a file.
 Muduo_LIBRARY_DIR:PATH=/root/cpp/Common/muduo/build/release-install-cpp11/lib
 
-//Value Computed by CMake
-echo_BINARY_DIR:STATIC=/root/cpp/Project/build
-
-//Value Computed by CMake
-echo_SOURCE_DIR:STATIC=/root/cpp/Project
-
 //Path to a library.
 muduo_base:FILEPATH=/root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_base.a
 

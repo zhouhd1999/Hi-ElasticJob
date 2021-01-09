@@ -14,12 +14,32 @@ Singleton.h
 iostream
 -
 
+/root/cpp/Project/src/base/DBBaseConn.h
+mysql++.h
+-
+iostream
+-
+
+/root/cpp/Project/src/base/DBConnPool.h
+ConfigManager.h
+/root/cpp/Project/src/base/ConfigManager.h
+mysql++.h
+-
+
 /root/cpp/Project/src/base/DBManager.h
 Singleton.h
 /root/cpp/Project/src/base/Singleton.h
 ConfigManager.h
 /root/cpp/Project/src/base/ConfigManager.h
+DBConnPool.h
+/root/cpp/Project/src/base/DBConnPool.h
+DBBaseConn.h
+/root/cpp/Project/src/base/DBBaseConn.h
+iostream
+-
 mysql++.h
+-
+vector
 -
 memory
 -
@@ -37,6 +57,12 @@ memory
 /root/cpp/Project/src/base/ConfigManager.h
 ../DBManager.h
 /root/cpp/Project/src/base/DBManager.h
+iostream
+-
+vector
+-
+mysql++.h
+-
 
 /usr/include/mysql/binary_log_types.h
 

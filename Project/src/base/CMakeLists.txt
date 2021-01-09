@@ -1,13 +1,17 @@
 set(BASE_SRCS
     "./ConfigManager.cc"
     "./ConfigManager.h"
+    "./DBBaseConn.cc"
+    "./DBBaseConn.h"
+    "./DBConnPool.cc"
+    "./DBConnPool.h"
+    "./DBManager.cc"
+    "./DBManager.h"
+    "./Singleton.h"
     "./ThreadUtils.cc"
     "./ThreadUtils.h"
     "./Timer.cc"
     "./Timer.h"
-    "./DBManager.cc"
-    "./DBManager.h"
-    "./Singleton.h"
 )
 
 add_library(Base
