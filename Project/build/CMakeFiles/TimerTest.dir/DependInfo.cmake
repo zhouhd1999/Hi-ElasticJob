@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/root/cpp/Project/src/base/test/DBTest.cc" "/root/cpp/Project/build/CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o"
+  "/root/cpp/Project/src/base/test/TimerTest.cc" "/root/cpp/Project/build/CMakeFiles/TimerTest.dir/src/base/test/TimerTest.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

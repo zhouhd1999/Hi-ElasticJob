@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named TimerTest
+
+# Build rule for target.
+TimerTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TimerTest
+.PHONY : TimerTest
+
+# fast build rule for target.
+TimerTest/fast:
+	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/build
+.PHONY : TimerTest/fast
+
+#=============================================================================
 # Target rules for targets named hello
 
 # Build rule for target.
@@ -149,32 +162,59 @@ Base/fast:
 	$(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/build
 .PHONY : Base/fast
 
-src/base/examples/DBTest.o: src/base/examples/DBTest.cc.o
+src/base/test/DBTest.o: src/base/test/DBTest.cc.o
 
-.PHONY : src/base/examples/DBTest.o
+.PHONY : src/base/test/DBTest.o
 
 # target to build an object file
-src/base/examples/DBTest.cc.o:
-	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o
-.PHONY : src/base/examples/DBTest.cc.o
+src/base/test/DBTest.cc.o:
+	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o
+.PHONY : src/base/test/DBTest.cc.o
 
-src/base/examples/DBTest.i: src/base/examples/DBTest.cc.i
+src/base/test/DBTest.i: src/base/test/DBTest.cc.i
 
-.PHONY : src/base/examples/DBTest.i
+.PHONY : src/base/test/DBTest.i
 
 # target to preprocess a source file
-src/base/examples/DBTest.cc.i:
-	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.i
-.PHONY : src/base/examples/DBTest.cc.i
+src/base/test/DBTest.cc.i:
+	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.i
+.PHONY : src/base/test/DBTest.cc.i
 
-src/base/examples/DBTest.s: src/base/examples/DBTest.cc.s
+src/base/test/DBTest.s: src/base/test/DBTest.cc.s
 
-.PHONY : src/base/examples/DBTest.s
+.PHONY : src/base/test/DBTest.s
 
 # target to generate assembly for a file
-src/base/examples/DBTest.cc.s:
-	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.s
-.PHONY : src/base/examples/DBTest.cc.s
+src/base/test/DBTest.cc.s:
+	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.s
+.PHONY : src/base/test/DBTest.cc.s
+
+src/base/test/TimerTest.o: src/base/test/TimerTest.cc.o
+
+.PHONY : src/base/test/TimerTest.o
+
+# target to build an object file
+src/base/test/TimerTest.cc.o:
+	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/src/base/test/TimerTest.cc.o
+.PHONY : src/base/test/TimerTest.cc.o
+
+src/base/test/TimerTest.i: src/base/test/TimerTest.cc.i
+
+.PHONY : src/base/test/TimerTest.i
+
+# target to preprocess a source file
+src/base/test/TimerTest.cc.i:
+	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/src/base/test/TimerTest.cc.i
+.PHONY : src/base/test/TimerTest.cc.i
+
+src/base/test/TimerTest.s: src/base/test/TimerTest.cc.s
+
+.PHONY : src/base/test/TimerTest.s
+
+# target to generate assembly for a file
+src/base/test/TimerTest.cc.s:
+	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/src/base/test/TimerTest.cc.s
+.PHONY : src/base/test/TimerTest.cc.s
 
 src/hello.o: src/hello.cc.o
 
@@ -211,12 +251,16 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... TimerTest"
 	@echo "... hello"
 	@echo "... DBTest"
 	@echo "... Base"
-	@echo "... src/base/examples/DBTest.o"
-	@echo "... src/base/examples/DBTest.i"
-	@echo "... src/base/examples/DBTest.s"
+	@echo "... src/base/test/DBTest.o"
+	@echo "... src/base/test/DBTest.i"
+	@echo "... src/base/test/DBTest.s"
+	@echo "... src/base/test/TimerTest.o"
+	@echo "... src/base/test/TimerTest.i"
+	@echo "... src/base/test/TimerTest.s"
 	@echo "... src/hello.o"
 	@echo "... src/hello.i"
 	@echo "... src/hello.s"

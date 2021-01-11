@@ -1,5 +1,6 @@
 /root/cpp/Project/build/CMakeFiles/rebuild_cache.dir
 /root/cpp/Project/build/CMakeFiles/edit_cache.dir
+/root/cpp/Project/build/CMakeFiles/TimerTest.dir
 /root/cpp/Project/build/CMakeFiles/hello.dir
 /root/cpp/Project/build/CMakeFiles/DBTest.dir
 /root/cpp/Project/build/src/base/CMakeFiles/rebuild_cache.dir

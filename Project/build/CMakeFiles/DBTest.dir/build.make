@@ -57,38 +57,38 @@ include CMakeFiles/DBTest.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DBTest.dir/flags.make
 
-CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o: CMakeFiles/DBTest.dir/flags.make
-CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o: ../src/base/examples/DBTest.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o -c /root/cpp/Project/src/base/examples/DBTest.cc
+CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o: CMakeFiles/DBTest.dir/flags.make
+CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o: ../src/base/test/DBTest.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o -c /root/cpp/Project/src/base/test/DBTest.cc
 
-CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/cpp/Project/src/base/examples/DBTest.cc > CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.i
+CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.i"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/cpp/Project/src/base/test/DBTest.cc > CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.i
 
-CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/cpp/Project/src/base/examples/DBTest.cc -o CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.s
+CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.s"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/cpp/Project/src/base/test/DBTest.cc -o CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.s
 
-CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o.requires:
+CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o.requires:
 
-.PHONY : CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o.requires
+.PHONY : CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o.requires
 
-CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o.provides: CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o.requires
-	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o.provides.build
-.PHONY : CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o.provides
+CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o.provides: CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o.requires
+	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o.provides.build
+.PHONY : CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o.provides
 
-CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o.provides.build: CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o
+CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o.provides.build: CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o
 
 
 # Object files for target DBTest
 DBTest_OBJECTS = \
-"CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o"
+"CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o"
 
 # External object files for target DBTest
 DBTest_EXTERNAL_OBJECTS =
 
-bin/DBTest: CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o
+bin/DBTest: CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o
 bin/DBTest: CMakeFiles/DBTest.dir/build.make
 bin/DBTest: /root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_net.a
 bin/DBTest: /root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_base.a
@@ -104,7 +104,7 @@ CMakeFiles/DBTest.dir/build: bin/DBTest
 
 .PHONY : CMakeFiles/DBTest.dir/build
 
-CMakeFiles/DBTest.dir/requires: CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o.requires
+CMakeFiles/DBTest.dir/requires: CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o.requires
 
 .PHONY : CMakeFiles/DBTest.dir/requires
 

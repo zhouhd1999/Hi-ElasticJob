@@ -29,26 +29,6 @@ namespace base
         return true;
     }
 
-    mysqlpp::Connection *DBConnManager::ApplyConn()
-    {
-        mysqlpp::Connection* conn= conn_pool_->grab();
-        if (conn)
-        {
-            return conn;
-        }
-        else
-        {
-            LOG_INFO << "Apply Conn Failed";
-            return nullptr;
-        }
-    }
-
-    bool DBConnManager::FreeConn(mysqlpp::Connection* conn)
-    {
-        conn_pool_->release(conn);
-        return true;
-    }
-
     std::shared_ptr<DBConnPool> DBConnManager::GetConnPool()
     {
         return conn_pool_;

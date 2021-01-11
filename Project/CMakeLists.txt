@@ -53,7 +53,7 @@ find_library(muduo_net muduo_net)
 message(STATUS ${muduo_base})
 message(STATUS ${muduo_net})
 
-find_package(Boost REQUIRED)
+find_package(Boost REQUIRED COMPONENTS system thread)
 include_directories(${Boost_INCLUDE_DIRS})
 
 include_directories(${PROJECT_SOURCE_DIR})
@@ -72,6 +72,15 @@ add_executable(DBTest ./src/base/test/DBTest.cc)
 target_link_libraries(DBTest
   ${muduo_net}
   ${muduo_base}
+  Base
+  pthread rt
+)
+
+add_executable(TimerTest ./src/base/test/TimerTest.cc)
+target_link_libraries(TimerTest
+  ${muduo_net}
+  ${muduo_base}
+  ${Boost_LIBRARIES}
   Base
   pthread rt
 )

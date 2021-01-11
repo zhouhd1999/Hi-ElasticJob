@@ -52,7 +52,7 @@ mutex
 memory
 -
 
-/root/cpp/Project/src/base/examples/DBTest.cc
+/root/cpp/Project/src/base/test/DBTest.cc
 ../ConfigManager.h
 /root/cpp/Project/src/base/ConfigManager.h
 ../DBManager.h

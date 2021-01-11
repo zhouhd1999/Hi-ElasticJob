@@ -25,12 +25,6 @@ namespace base
         // 反初始化
         bool UninitDBConnManager();
 
-        // 申请连接
-        mysqlpp::Connection *ApplyConn();
-
-        // 释放连接
-        bool FreeConn(mysqlpp::Connection* ptr_conn);
-
         std::shared_ptr<DBConnPool> GetConnPool();
 
     private:

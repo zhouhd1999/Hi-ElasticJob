@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DBTest.dir/src/base/examples/DBTest.cc.o"
+  "CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o"
   "bin/DBTest.pdb"
   "bin/DBTest"
 )

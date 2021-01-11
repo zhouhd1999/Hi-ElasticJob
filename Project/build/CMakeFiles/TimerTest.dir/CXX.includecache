@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/cpp/Project/src/base/Timer.h
+boost/thread.hpp
+-
+boost/thread/mutex.hpp
+-
+boost/thread/condition_variable.hpp
+-
+cstdint
+-
+
+/root/cpp/Project/src/base/test/TimerTest.cc
+../Timer.h
+/root/cpp/Project/src/base/Timer.h
+iostream
+-
+memory
+-
+functional
+-
+
