@@ -68,8 +68,16 @@ target_link_libraries(hello
 )
 
 # 测试用例
-add_executable(DBTest ./src/base/test/DBTest.cc)
-target_link_libraries(DBTest
+add_executable(DBCommonTest ./src/base/test/DBCommonTest.cc)
+target_link_libraries(DBCommonTest
+  ${muduo_net}
+  ${muduo_base}
+  Base
+  pthread rt
+)
+
+add_executable(DBTransactionTest ./src/base/test/DBTransactionTest.cc)
+target_link_libraries(DBTransactionTest
   ${muduo_net}
   ${muduo_base}
   Base

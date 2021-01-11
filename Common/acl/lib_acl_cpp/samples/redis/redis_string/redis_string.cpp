@@ -663,8 +663,8 @@ static void usage(const char* procname)
 int main(int argc, char* argv[])
 {
 	int  ch, n = 1, conn_timeout = 10, rw_timeout = 10, ttl = 10;
-	acl::string addr("127.0.0.1:6379"), cmd;
-	bool cluster_mode = false;
+	acl::string addr("121.199.16.225:6379"), cmd;
+	bool cluster_mode = true;
 
 	while ((ch = getopt(argc, argv, "hs:n:C:I:a:t:cM")) > 0)
 	{

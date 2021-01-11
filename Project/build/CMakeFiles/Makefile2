@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /root/cpp/Project/build
 CMakeFiles/TimerTest.dir/all: src/base/CMakeFiles/Base.dir/all
 	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/depend
 	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=10,11 "Built target TimerTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=12,13 "Built target TimerTest"
 .PHONY : CMakeFiles/TimerTest.dir/all
 
 # Include target in all.
@@ -97,13 +97,50 @@ clean: CMakeFiles/TimerTest.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/DBTransactionTest.dir
+
+# All Build rule for target.
+CMakeFiles/DBTransactionTest.dir/all: src/base/CMakeFiles/Base.dir/all
+	$(MAKE) -f CMakeFiles/DBTransactionTest.dir/build.make CMakeFiles/DBTransactionTest.dir/depend
+	$(MAKE) -f CMakeFiles/DBTransactionTest.dir/build.make CMakeFiles/DBTransactionTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=10,11 "Built target DBTransactionTest"
+.PHONY : CMakeFiles/DBTransactionTest.dir/all
+
+# Include target in all.
+all: CMakeFiles/DBTransactionTest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/DBTransactionTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DBTransactionTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
+.PHONY : CMakeFiles/DBTransactionTest.dir/rule
+
+# Convenience name for target.
+DBTransactionTest: CMakeFiles/DBTransactionTest.dir/rule
+
+.PHONY : DBTransactionTest
+
+# clean rule for target.
+CMakeFiles/DBTransactionTest.dir/clean:
+	$(MAKE) -f CMakeFiles/DBTransactionTest.dir/build.make CMakeFiles/DBTransactionTest.dir/clean
+.PHONY : CMakeFiles/DBTransactionTest.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/DBTransactionTest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/hello.dir
 
 # All Build rule for target.
 CMakeFiles/hello.dir/all: src/base/CMakeFiles/Base.dir/all
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/depend
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=12,13 "Built target hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=14,15 "Built target hello"
 .PHONY : CMakeFiles/hello.dir/all
 
 # Include target in all.
@@ -134,39 +171,39 @@ clean: CMakeFiles/hello.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/DBTest.dir
+# Target rules for target CMakeFiles/DBCommonTest.dir
 
 # All Build rule for target.
-CMakeFiles/DBTest.dir/all: src/base/CMakeFiles/Base.dir/all
-	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/depend
-	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=8,9 "Built target DBTest"
-.PHONY : CMakeFiles/DBTest.dir/all
+CMakeFiles/DBCommonTest.dir/all: src/base/CMakeFiles/Base.dir/all
+	$(MAKE) -f CMakeFiles/DBCommonTest.dir/build.make CMakeFiles/DBCommonTest.dir/depend
+	$(MAKE) -f CMakeFiles/DBCommonTest.dir/build.make CMakeFiles/DBCommonTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=8,9 "Built target DBCommonTest"
+.PHONY : CMakeFiles/DBCommonTest.dir/all
 
 # Include target in all.
-all: CMakeFiles/DBTest.dir/all
+all: CMakeFiles/DBCommonTest.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/DBTest.dir/rule: cmake_check_build_system
+CMakeFiles/DBCommonTest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DBTest.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DBCommonTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
-.PHONY : CMakeFiles/DBTest.dir/rule
+.PHONY : CMakeFiles/DBCommonTest.dir/rule
 
 # Convenience name for target.
-DBTest: CMakeFiles/DBTest.dir/rule
+DBCommonTest: CMakeFiles/DBCommonTest.dir/rule
 
-.PHONY : DBTest
-
-# clean rule for target.
-CMakeFiles/DBTest.dir/clean:
-	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/clean
-.PHONY : CMakeFiles/DBTest.dir/clean
+.PHONY : DBCommonTest
 
 # clean rule for target.
-clean: CMakeFiles/DBTest.dir/clean
+CMakeFiles/DBCommonTest.dir/clean:
+	$(MAKE) -f CMakeFiles/DBCommonTest.dir/build.make CMakeFiles/DBCommonTest.dir/clean
+.PHONY : CMakeFiles/DBCommonTest.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/DBCommonTest.dir/clean
 
 .PHONY : clean
 

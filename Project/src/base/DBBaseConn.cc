@@ -9,58 +9,130 @@ using namespace mysqlpp;
 
 namespace base
 {
-    Connection *DBBaseConn::ApplyConn()
+    bool DBBaseConn::ApplyConn()
     {
-        Connection* conn= DBConnManager::Instance().GetConnPool()->grab();
-        if (conn)
+        conn_ = DBConnManager::Instance().GetConnPool()->grab();
+        if (conn_)
         {
-            return conn;
+            return true;
         }
         else
         {
             LOG_INFO << "Apply Conn Failed";
-            return nullptr;
+            return false;
         }
     }
 
-    bool DBBaseConn::FreeConn(Connection* conn)
+    bool DBBaseConn::FreeConn()
     {
-        DBConnManager::Instance().GetConnPool()->release(conn);
+        DBConnManager::Instance().GetConnPool()->release(conn_);
+        conn_ = nullptr;
         return true;
     }
 
-    bool DBBaseConn::Execute(const std::string& sql)
+    bool DBBaseConn::Execute(const std::string &sql)
     {
-        Connection* conn = ApplyConn();
-        if (!conn)
+        bool isTran = false;
+
+        // 如果conn_不为空指针，说明是事务，事务中已经申请过连接了
+        if (conn_ == nullptr)
         {
-            return false;
+            if (!ApplyConn())
+            {
+                return false;
+            }
         }
-        Query query = conn->query(sql);
+        else
+        {
+            isTran = true;
+        }
+
+        Query query = conn_->query(sql);
         if (query.exec())
         {
             LOG_INFO << "Execuate sql success";
-            FreeConn(conn);
+
+            // 如果是事务，则不用释放链接
+            if (!isTran)
+            {
+                FreeConn();
+            }
             return true;
         }
         else
         {
             LOG_ERROR << "Execuate sql failed, sql is: " << sql;
-            FreeConn(conn);
+
+            // 异常情况不管是否是事务都需要释放
+            FreeConn();
             return false;
         }
     }
 
-    bool DBBaseConn::ExecuteQuary(const std::string& sql, StoreQueryResult& res)
+    bool DBBaseConn::ExecuteQuary(const std::string &sql, StoreQueryResult &res)
     {
-        Connection* conn = ApplyConn();
-        if (!conn)
+        bool isTran = false;
+
+        // 如果conn_不为空指针，说明是事务，事务中已经申请过连接了
+        if (conn_ == nullptr)
+        {
+            if (!ApplyConn())
+            {
+                return false;
+            }
+        }
+        else
+        {
+            isTran = true;
+        }
+        Query query = conn_->query(sql);
+        res = query.store();
+        if (res)
+        {
+            LOG_INFO << "Execuate sql success";
+
+            // 如果是事务，则不用释放链接
+            if (!isTran)
+            {
+                FreeConn();
+            }
+            return true;
+        }
+        else
+        {
+            LOG_ERROR << "Execuate sql failed, sql is: " << sql;
+
+            // 异常情况不管是否是事务都需要释放
+            FreeConn();
+            return false;
+        }
+    }
+
+    bool DBBaseConn::Begin(
+        Transaction::IsolationLevel isolationLevel,
+        Transaction::IsolationScope isolationScope)
+    {
+        if (!ApplyConn())
         {
             return false;
         }
-        Query query = conn->query(sql);
-        res = query.store();
-        FreeConn(conn);
+        trans_.reset(new Transaction(*conn_, isolationLevel, isolationScope));
         return true;
     }
-}
+
+    bool DBBaseConn::Commit() // 如果Begin了以后代码异常没走到Commit或者Rollback，内存泄漏
+    {
+        trans_->commit();
+        LOG_INFO << "Transcation commit";
+        FreeConn();
+        return true;
+    }
+
+    void DBBaseConn::Rollback()
+    {
+        trans_->rollback();
+        LOG_INFO << "Transcation rollback";
+        FreeConn();
+        
+    }
+} // namespace base

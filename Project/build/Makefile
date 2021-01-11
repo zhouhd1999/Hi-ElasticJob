@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /root/cpp/Project/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -124,6 +124,19 @@ TimerTest/fast:
 .PHONY : TimerTest/fast
 
 #=============================================================================
+# Target rules for targets named DBTransactionTest
+
+# Build rule for target.
+DBTransactionTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DBTransactionTest
+.PHONY : DBTransactionTest
+
+# fast build rule for target.
+DBTransactionTest/fast:
+	$(MAKE) -f CMakeFiles/DBTransactionTest.dir/build.make CMakeFiles/DBTransactionTest.dir/build
+.PHONY : DBTransactionTest/fast
+
+#=============================================================================
 # Target rules for targets named hello
 
 # Build rule for target.
@@ -137,17 +150,17 @@ hello/fast:
 .PHONY : hello/fast
 
 #=============================================================================
-# Target rules for targets named DBTest
+# Target rules for targets named DBCommonTest
 
 # Build rule for target.
-DBTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DBTest
-.PHONY : DBTest
+DBCommonTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DBCommonTest
+.PHONY : DBCommonTest
 
 # fast build rule for target.
-DBTest/fast:
-	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/build
-.PHONY : DBTest/fast
+DBCommonTest/fast:
+	$(MAKE) -f CMakeFiles/DBCommonTest.dir/build.make CMakeFiles/DBCommonTest.dir/build
+.PHONY : DBCommonTest/fast
 
 #=============================================================================
 # Target rules for targets named Base
@@ -162,32 +175,59 @@ Base/fast:
 	$(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/build
 .PHONY : Base/fast
 
-src/base/test/DBTest.o: src/base/test/DBTest.cc.o
+src/base/test/DBCommonTest.o: src/base/test/DBCommonTest.cc.o
 
-.PHONY : src/base/test/DBTest.o
+.PHONY : src/base/test/DBCommonTest.o
 
 # target to build an object file
-src/base/test/DBTest.cc.o:
-	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.o
-.PHONY : src/base/test/DBTest.cc.o
+src/base/test/DBCommonTest.cc.o:
+	$(MAKE) -f CMakeFiles/DBCommonTest.dir/build.make CMakeFiles/DBCommonTest.dir/src/base/test/DBCommonTest.cc.o
+.PHONY : src/base/test/DBCommonTest.cc.o
 
-src/base/test/DBTest.i: src/base/test/DBTest.cc.i
+src/base/test/DBCommonTest.i: src/base/test/DBCommonTest.cc.i
 
-.PHONY : src/base/test/DBTest.i
+.PHONY : src/base/test/DBCommonTest.i
 
 # target to preprocess a source file
-src/base/test/DBTest.cc.i:
-	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.i
-.PHONY : src/base/test/DBTest.cc.i
+src/base/test/DBCommonTest.cc.i:
+	$(MAKE) -f CMakeFiles/DBCommonTest.dir/build.make CMakeFiles/DBCommonTest.dir/src/base/test/DBCommonTest.cc.i
+.PHONY : src/base/test/DBCommonTest.cc.i
 
-src/base/test/DBTest.s: src/base/test/DBTest.cc.s
+src/base/test/DBCommonTest.s: src/base/test/DBCommonTest.cc.s
 
-.PHONY : src/base/test/DBTest.s
+.PHONY : src/base/test/DBCommonTest.s
 
 # target to generate assembly for a file
-src/base/test/DBTest.cc.s:
-	$(MAKE) -f CMakeFiles/DBTest.dir/build.make CMakeFiles/DBTest.dir/src/base/test/DBTest.cc.s
-.PHONY : src/base/test/DBTest.cc.s
+src/base/test/DBCommonTest.cc.s:
+	$(MAKE) -f CMakeFiles/DBCommonTest.dir/build.make CMakeFiles/DBCommonTest.dir/src/base/test/DBCommonTest.cc.s
+.PHONY : src/base/test/DBCommonTest.cc.s
+
+src/base/test/DBTransactionTest.o: src/base/test/DBTransactionTest.cc.o
+
+.PHONY : src/base/test/DBTransactionTest.o
+
+# target to build an object file
+src/base/test/DBTransactionTest.cc.o:
+	$(MAKE) -f CMakeFiles/DBTransactionTest.dir/build.make CMakeFiles/DBTransactionTest.dir/src/base/test/DBTransactionTest.cc.o
+.PHONY : src/base/test/DBTransactionTest.cc.o
+
+src/base/test/DBTransactionTest.i: src/base/test/DBTransactionTest.cc.i
+
+.PHONY : src/base/test/DBTransactionTest.i
+
+# target to preprocess a source file
+src/base/test/DBTransactionTest.cc.i:
+	$(MAKE) -f CMakeFiles/DBTransactionTest.dir/build.make CMakeFiles/DBTransactionTest.dir/src/base/test/DBTransactionTest.cc.i
+.PHONY : src/base/test/DBTransactionTest.cc.i
+
+src/base/test/DBTransactionTest.s: src/base/test/DBTransactionTest.cc.s
+
+.PHONY : src/base/test/DBTransactionTest.s
+
+# target to generate assembly for a file
+src/base/test/DBTransactionTest.cc.s:
+	$(MAKE) -f CMakeFiles/DBTransactionTest.dir/build.make CMakeFiles/DBTransactionTest.dir/src/base/test/DBTransactionTest.cc.s
+.PHONY : src/base/test/DBTransactionTest.cc.s
 
 src/base/test/TimerTest.o: src/base/test/TimerTest.cc.o
 
@@ -249,15 +289,19 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... TimerTest"
+	@echo "... rebuild_cache"
+	@echo "... DBTransactionTest"
 	@echo "... hello"
-	@echo "... DBTest"
+	@echo "... DBCommonTest"
 	@echo "... Base"
-	@echo "... src/base/test/DBTest.o"
-	@echo "... src/base/test/DBTest.i"
-	@echo "... src/base/test/DBTest.s"
+	@echo "... src/base/test/DBCommonTest.o"
+	@echo "... src/base/test/DBCommonTest.i"
+	@echo "... src/base/test/DBCommonTest.s"
+	@echo "... src/base/test/DBTransactionTest.o"
+	@echo "... src/base/test/DBTransactionTest.i"
+	@echo "... src/base/test/DBTransactionTest.s"
 	@echo "... src/base/test/TimerTest.o"
 	@echo "... src/base/test/TimerTest.i"
 	@echo "... src/base/test/TimerTest.s"

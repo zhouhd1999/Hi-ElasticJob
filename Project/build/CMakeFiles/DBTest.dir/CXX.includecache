@@ -19,6 +19,8 @@ mysql++.h
 -
 iostream
 -
+memory
+-
 
 /root/cpp/Project/src/base/DBConnPool.h
 ConfigManager.h
