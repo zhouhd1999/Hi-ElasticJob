@@ -21,6 +21,8 @@ iostream
 -
 memory
 -
+boost/thread/shared_mutex.hpp
+-
 
 /root/cpp/Project/src/base/DBConnPool.h
 ConfigManager.h
@@ -44,6 +46,8 @@ mysql++.h
 vector
 -
 memory
+-
+boost/thread/shared_mutex.hpp
 -
 
 /root/cpp/Project/src/base/Singleton.h

@@ -74,6 +74,7 @@ target_link_libraries(DBCommonTest
   ${muduo_base}
   Base
   pthread rt
+  ${Boost_LIBRARIES}
 )
 
 add_executable(DBTransactionTest ./src/base/test/DBTransactionTest.cc)
@@ -82,6 +83,7 @@ target_link_libraries(DBTransactionTest
   ${muduo_base}
   Base
   pthread rt
+  ${Boost_LIBRARIES}
 )
 
 add_executable(RedisTest ./src/base/test/RedisTest.cc)

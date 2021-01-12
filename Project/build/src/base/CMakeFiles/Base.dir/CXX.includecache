@@ -81,6 +81,8 @@ iostream
 -
 memory
 -
+boost/thread/shared_mutex.hpp
+-
 
 /root/cpp/Project/src/base/DBConnPool.cc
 DBConnPool.h
@@ -128,6 +130,8 @@ mysql++.h
 vector
 -
 memory
+-
+boost/thread/shared_mutex.hpp
 -
 
 /root/cpp/Project/src/base/RedisController.cc
