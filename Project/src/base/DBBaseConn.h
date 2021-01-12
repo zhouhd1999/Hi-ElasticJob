@@ -5,6 +5,7 @@
 #include <mysql++.h>
 #include <iostream>
 #include <memory>
+#include <boost/thread/shared_mutex.hpp>
 
 using namespace mysqlpp;
 using namespace std;
@@ -44,6 +45,12 @@ namespace base
         bool DoTranSql();
 
     private:
+        typedef boost::shared_mutex CRWMutex;
+        typedef boost::shared_lock<CRWMutex> CReadLock;  // 读锁
+        typedef boost::unique_lock<CRWMutex> CWriteLock; // 写锁
+
+        CRWMutex redis_locker_;
+
         shared_ptr<Transaction> trans_ = nullptr;
         Connection* conn_ = nullptr;   // mysql++内部连接池自动管理创建的Connection对象，不用使用智能指针
     };

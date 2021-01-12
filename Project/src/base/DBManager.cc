@@ -18,6 +18,7 @@ namespace base
         LOG_INFO << "Trying to connect database: " << st_param.str_address << ":" << st_param.port
                  << "/" << st_param.str_db_name << "...";
 
+        CWriteLock wlocked(redis_locker_);
         conn_pool_ = std::shared_ptr<DBConnPool>(new DBConnPool(st_param));
         return true;
     }
@@ -25,12 +26,13 @@ namespace base
     // 反初始化
     bool DBConnManager::UninitDBConnManager()
     {
-        // 智能指针自动释放
+        conn_pool_.reset();
         return true;
     }
 
     std::shared_ptr<DBConnPool> DBConnManager::GetConnPool()
     {
+        CReadLock rlocked(redis_locker_);
         return conn_pool_;
     }
 }

@@ -11,6 +11,7 @@ namespace base
 {
     bool DBBaseConn::ApplyConn()
     {
+        CWriteLock wlocked(redis_locker_);
         conn_ = DBConnManager::Instance().GetConnPool()->grab();
         if (conn_)
         {
@@ -25,6 +26,7 @@ namespace base
 
     bool DBBaseConn::FreeConn()
     {
+        CWriteLock wlocked(redis_locker_);
         DBConnManager::Instance().GetConnPool()->release(conn_);
         conn_ = nullptr;
         return true;

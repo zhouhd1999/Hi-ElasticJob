@@ -11,6 +11,7 @@
 #include <mysql++.h>
 #include <vector>
 #include <memory>
+#include <boost/thread/shared_mutex.hpp>
 
 namespace base
 {
@@ -28,7 +29,13 @@ namespace base
         std::shared_ptr<DBConnPool> GetConnPool();
 
     private:
-        // 目前认为项目中只有一个连接池，mysql++支持多个连接池，后续有必要的话再封装
+        typedef boost::shared_mutex CRWMutex;
+        typedef boost::shared_lock<CRWMutex> CReadLock;  // 读锁
+        typedef boost::unique_lock<CRWMutex> CWriteLock; // 写锁
+
+        CRWMutex redis_locker_;
+
+        // 目前认为项目中认为连接池是唯一的，但mysql++支持多个连接池，后续有必要的话再封装
         std::shared_ptr<DBConnPool> conn_pool_;
     };
 }
