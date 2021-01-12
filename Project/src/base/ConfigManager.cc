@@ -24,7 +24,7 @@ namespace base
         db_param_.str_password = "123456987";
 
         redis_param_.str_address = "121.199.16.225";
-        redis_param_.str_passwd = "123456987";
+        redis_param_.str_passwd = "";
 
         is_init_ = true;
         return true;

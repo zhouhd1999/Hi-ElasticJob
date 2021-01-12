@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/root/cpp/Project/src/base/DBBaseConn.cc" "/root/cpp/Project/build/src/base/CMakeFiles/Base.dir/DBBaseConn.cc.o"
   "/root/cpp/Project/src/base/DBConnPool.cc" "/root/cpp/Project/build/src/base/CMakeFiles/Base.dir/DBConnPool.cc.o"
   "/root/cpp/Project/src/base/DBManager.cc" "/root/cpp/Project/build/src/base/CMakeFiles/Base.dir/DBManager.cc.o"
+  "/root/cpp/Project/src/base/RedisController.cc" "/root/cpp/Project/build/src/base/CMakeFiles/Base.dir/RedisController.cc.o"
   "/root/cpp/Project/src/base/ThreadUtils.cc" "/root/cpp/Project/build/src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o"
   "/root/cpp/Project/src/base/Timer.cc" "/root/cpp/Project/build/src/base/CMakeFiles/Base.dir/Timer.cc.o"
   )

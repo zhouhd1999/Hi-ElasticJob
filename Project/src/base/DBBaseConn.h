@@ -45,7 +45,7 @@ namespace base
 
     private:
         shared_ptr<Transaction> trans_ = nullptr;
-        Connection* conn_ = nullptr;   // mysql++内部连接池自动管理创建的Connection对象，可以不使用智能指针
+        Connection* conn_ = nullptr;   // mysql++内部连接池自动管理创建的Connection对象，不用使用智能指针
     };
 } // namespace base
 

@@ -153,9 +153,33 @@ src/base/CMakeFiles/Base.dir/DBManager.cc.o.provides: src/base/CMakeFiles/Base.d
 src/base/CMakeFiles/Base.dir/DBManager.cc.o.provides.build: src/base/CMakeFiles/Base.dir/DBManager.cc.o
 
 
+src/base/CMakeFiles/Base.dir/RedisController.cc.o: src/base/CMakeFiles/Base.dir/flags.make
+src/base/CMakeFiles/Base.dir/RedisController.cc.o: ../src/base/RedisController.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/base/CMakeFiles/Base.dir/RedisController.cc.o"
+	cd /root/cpp/Project/build/src/base && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Base.dir/RedisController.cc.o -c /root/cpp/Project/src/base/RedisController.cc
+
+src/base/CMakeFiles/Base.dir/RedisController.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Base.dir/RedisController.cc.i"
+	cd /root/cpp/Project/build/src/base && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/cpp/Project/src/base/RedisController.cc > CMakeFiles/Base.dir/RedisController.cc.i
+
+src/base/CMakeFiles/Base.dir/RedisController.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Base.dir/RedisController.cc.s"
+	cd /root/cpp/Project/build/src/base && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/cpp/Project/src/base/RedisController.cc -o CMakeFiles/Base.dir/RedisController.cc.s
+
+src/base/CMakeFiles/Base.dir/RedisController.cc.o.requires:
+
+.PHONY : src/base/CMakeFiles/Base.dir/RedisController.cc.o.requires
+
+src/base/CMakeFiles/Base.dir/RedisController.cc.o.provides: src/base/CMakeFiles/Base.dir/RedisController.cc.o.requires
+	$(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/RedisController.cc.o.provides.build
+.PHONY : src/base/CMakeFiles/Base.dir/RedisController.cc.o.provides
+
+src/base/CMakeFiles/Base.dir/RedisController.cc.o.provides.build: src/base/CMakeFiles/Base.dir/RedisController.cc.o
+
+
 src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o: src/base/CMakeFiles/Base.dir/flags.make
 src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o: ../src/base/ThreadUtils.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o"
 	cd /root/cpp/Project/build/src/base && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Base.dir/ThreadUtils.cc.o -c /root/cpp/Project/src/base/ThreadUtils.cc
 
 src/base/CMakeFiles/Base.dir/ThreadUtils.cc.i: cmake_force
@@ -179,7 +203,7 @@ src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o.provides.build: src/base/CMakeFile
 
 src/base/CMakeFiles/Base.dir/Timer.cc.o: src/base/CMakeFiles/Base.dir/flags.make
 src/base/CMakeFiles/Base.dir/Timer.cc.o: ../src/base/Timer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/base/CMakeFiles/Base.dir/Timer.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/base/CMakeFiles/Base.dir/Timer.cc.o"
 	cd /root/cpp/Project/build/src/base && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Base.dir/Timer.cc.o -c /root/cpp/Project/src/base/Timer.cc
 
 src/base/CMakeFiles/Base.dir/Timer.cc.i: cmake_force
@@ -207,6 +231,7 @@ Base_OBJECTS = \
 "CMakeFiles/Base.dir/DBBaseConn.cc.o" \
 "CMakeFiles/Base.dir/DBConnPool.cc.o" \
 "CMakeFiles/Base.dir/DBManager.cc.o" \
+"CMakeFiles/Base.dir/RedisController.cc.o" \
 "CMakeFiles/Base.dir/ThreadUtils.cc.o" \
 "CMakeFiles/Base.dir/Timer.cc.o"
 
@@ -217,11 +242,12 @@ lib/libBase.a: src/base/CMakeFiles/Base.dir/ConfigManager.cc.o
 lib/libBase.a: src/base/CMakeFiles/Base.dir/DBBaseConn.cc.o
 lib/libBase.a: src/base/CMakeFiles/Base.dir/DBConnPool.cc.o
 lib/libBase.a: src/base/CMakeFiles/Base.dir/DBManager.cc.o
+lib/libBase.a: src/base/CMakeFiles/Base.dir/RedisController.cc.o
 lib/libBase.a: src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o
 lib/libBase.a: src/base/CMakeFiles/Base.dir/Timer.cc.o
 lib/libBase.a: src/base/CMakeFiles/Base.dir/build.make
 lib/libBase.a: src/base/CMakeFiles/Base.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library ../../lib/libBase.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library ../../lib/libBase.a"
 	cd /root/cpp/Project/build/src/base && $(CMAKE_COMMAND) -P CMakeFiles/Base.dir/cmake_clean_target.cmake
 	cd /root/cpp/Project/build/src/base && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Base.dir/link.txt --verbose=$(VERBOSE)
 
@@ -234,6 +260,7 @@ src/base/CMakeFiles/Base.dir/requires: src/base/CMakeFiles/Base.dir/ConfigManage
 src/base/CMakeFiles/Base.dir/requires: src/base/CMakeFiles/Base.dir/DBBaseConn.cc.o.requires
 src/base/CMakeFiles/Base.dir/requires: src/base/CMakeFiles/Base.dir/DBConnPool.cc.o.requires
 src/base/CMakeFiles/Base.dir/requires: src/base/CMakeFiles/Base.dir/DBManager.cc.o.requires
+src/base/CMakeFiles/Base.dir/requires: src/base/CMakeFiles/Base.dir/RedisController.cc.o.requires
 src/base/CMakeFiles/Base.dir/requires: src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o.requires
 src/base/CMakeFiles/Base.dir/requires: src/base/CMakeFiles/Base.dir/Timer.cc.o.requires
 

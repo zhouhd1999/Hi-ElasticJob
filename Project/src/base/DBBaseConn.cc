@@ -133,6 +133,5 @@ namespace base
         trans_->rollback();
         LOG_INFO << "Transcation rollback";
         FreeConn();
-        
     }
 } // namespace base

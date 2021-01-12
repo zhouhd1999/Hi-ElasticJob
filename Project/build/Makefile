@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /root/cpp/Project/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,30 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named TimerTest
+# Target rules for targets named DBCommonTest
 
 # Build rule for target.
-TimerTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TimerTest
-.PHONY : TimerTest
+DBCommonTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DBCommonTest
+.PHONY : DBCommonTest
 
 # fast build rule for target.
-TimerTest/fast:
-	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/build
-.PHONY : TimerTest/fast
+DBCommonTest/fast:
+	$(MAKE) -f CMakeFiles/DBCommonTest.dir/build.make CMakeFiles/DBCommonTest.dir/build
+.PHONY : DBCommonTest/fast
 
 #=============================================================================
-# Target rules for targets named DBTransactionTest
+# Target rules for targets named RedisTest
 
 # Build rule for target.
-DBTransactionTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DBTransactionTest
-.PHONY : DBTransactionTest
+RedisTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RedisTest
+.PHONY : RedisTest
 
 # fast build rule for target.
-DBTransactionTest/fast:
-	$(MAKE) -f CMakeFiles/DBTransactionTest.dir/build.make CMakeFiles/DBTransactionTest.dir/build
-.PHONY : DBTransactionTest/fast
+RedisTest/fast:
+	$(MAKE) -f CMakeFiles/RedisTest.dir/build.make CMakeFiles/RedisTest.dir/build
+.PHONY : RedisTest/fast
 
 #=============================================================================
 # Target rules for targets named hello
@@ -150,17 +150,30 @@ hello/fast:
 .PHONY : hello/fast
 
 #=============================================================================
-# Target rules for targets named DBCommonTest
+# Target rules for targets named DBTransactionTest
 
 # Build rule for target.
-DBCommonTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DBCommonTest
-.PHONY : DBCommonTest
+DBTransactionTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DBTransactionTest
+.PHONY : DBTransactionTest
 
 # fast build rule for target.
-DBCommonTest/fast:
-	$(MAKE) -f CMakeFiles/DBCommonTest.dir/build.make CMakeFiles/DBCommonTest.dir/build
-.PHONY : DBCommonTest/fast
+DBTransactionTest/fast:
+	$(MAKE) -f CMakeFiles/DBTransactionTest.dir/build.make CMakeFiles/DBTransactionTest.dir/build
+.PHONY : DBTransactionTest/fast
+
+#=============================================================================
+# Target rules for targets named TimerTest
+
+# Build rule for target.
+TimerTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TimerTest
+.PHONY : TimerTest
+
+# fast build rule for target.
+TimerTest/fast:
+	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/build
+.PHONY : TimerTest/fast
 
 #=============================================================================
 # Target rules for targets named Base
@@ -229,6 +242,33 @@ src/base/test/DBTransactionTest.cc.s:
 	$(MAKE) -f CMakeFiles/DBTransactionTest.dir/build.make CMakeFiles/DBTransactionTest.dir/src/base/test/DBTransactionTest.cc.s
 .PHONY : src/base/test/DBTransactionTest.cc.s
 
+src/base/test/RedisTest.o: src/base/test/RedisTest.cc.o
+
+.PHONY : src/base/test/RedisTest.o
+
+# target to build an object file
+src/base/test/RedisTest.cc.o:
+	$(MAKE) -f CMakeFiles/RedisTest.dir/build.make CMakeFiles/RedisTest.dir/src/base/test/RedisTest.cc.o
+.PHONY : src/base/test/RedisTest.cc.o
+
+src/base/test/RedisTest.i: src/base/test/RedisTest.cc.i
+
+.PHONY : src/base/test/RedisTest.i
+
+# target to preprocess a source file
+src/base/test/RedisTest.cc.i:
+	$(MAKE) -f CMakeFiles/RedisTest.dir/build.make CMakeFiles/RedisTest.dir/src/base/test/RedisTest.cc.i
+.PHONY : src/base/test/RedisTest.cc.i
+
+src/base/test/RedisTest.s: src/base/test/RedisTest.cc.s
+
+.PHONY : src/base/test/RedisTest.s
+
+# target to generate assembly for a file
+src/base/test/RedisTest.cc.s:
+	$(MAKE) -f CMakeFiles/RedisTest.dir/build.make CMakeFiles/RedisTest.dir/src/base/test/RedisTest.cc.s
+.PHONY : src/base/test/RedisTest.cc.s
+
 src/base/test/TimerTest.o: src/base/test/TimerTest.cc.o
 
 .PHONY : src/base/test/TimerTest.o
@@ -289,12 +329,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
-	@echo "... TimerTest"
 	@echo "... rebuild_cache"
-	@echo "... DBTransactionTest"
-	@echo "... hello"
 	@echo "... DBCommonTest"
+	@echo "... RedisTest"
+	@echo "... hello"
+	@echo "... DBTransactionTest"
+	@echo "... TimerTest"
+	@echo "... edit_cache"
 	@echo "... Base"
 	@echo "... src/base/test/DBCommonTest.o"
 	@echo "... src/base/test/DBCommonTest.i"
@@ -302,6 +343,9 @@ help:
 	@echo "... src/base/test/DBTransactionTest.o"
 	@echo "... src/base/test/DBTransactionTest.i"
 	@echo "... src/base/test/DBTransactionTest.s"
+	@echo "... src/base/test/RedisTest.o"
+	@echo "... src/base/test/RedisTest.i"
+	@echo "... src/base/test/RedisTest.s"
 	@echo "... src/base/test/TimerTest.o"
 	@echo "... src/base/test/TimerTest.i"
 	@echo "... src/base/test/TimerTest.s"

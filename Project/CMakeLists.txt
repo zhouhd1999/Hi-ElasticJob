@@ -84,6 +84,17 @@ target_link_libraries(DBTransactionTest
   pthread rt
 )
 
+add_executable(RedisTest ./src/base/test/RedisTest.cc)
+target_link_libraries(RedisTest
+  ${muduo_net}
+  ${muduo_base}
+  redis++
+  hiredis
+  Base
+  pthread rt
+  ${Boost_LIBRARIES}
+)
+
 add_executable(TimerTest ./src/base/test/TimerTest.cc)
 target_link_libraries(TimerTest
   ${muduo_net}

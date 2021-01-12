@@ -18,7 +18,7 @@
 BOOST_THREAD_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpthread.so
 
 //Dependencies for the target
-Base_LIB_DEPENDS:STATIC=general;mysqlpp;general;pthread;general;rt;general;/root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_base.a;general;/root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_net.a;
+Base_LIB_DEPENDS:STATIC=general;mysqlpp;general;redis++;general;hiredis;general;/root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_base.a;general;/root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_net.a;general;pthread;general;rt;
 
 //Boost atomic library (debug)
 Boost_ATOMIC_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_atomic.so

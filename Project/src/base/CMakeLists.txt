@@ -7,6 +7,8 @@ set(BASE_SRCS
     "./DBConnPool.h"
     "./DBManager.cc"
     "./DBManager.h"
+    "./RedisController.cc"
+    "./RedisController.h"
     "./Singleton.h"
     "./ThreadUtils.cc"
     "./ThreadUtils.h"
@@ -31,7 +33,9 @@ find_library(muduo_net muduo_net)
 
 target_link_libraries(Base
     mysqlpp
-    pthread rt
+    redis++
+    hiredis
     ${muduo_base}
     ${muduo_net}
+    pthread rt
 )

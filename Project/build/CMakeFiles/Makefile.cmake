@@ -47,9 +47,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/TimerTest.dir/DependInfo.cmake"
-  "CMakeFiles/DBTransactionTest.dir/DependInfo.cmake"
-  "CMakeFiles/hello.dir/DependInfo.cmake"
   "CMakeFiles/DBCommonTest.dir/DependInfo.cmake"
+  "CMakeFiles/RedisTest.dir/DependInfo.cmake"
+  "CMakeFiles/hello.dir/DependInfo.cmake"
+  "CMakeFiles/DBTransactionTest.dir/DependInfo.cmake"
+  "CMakeFiles/TimerTest.dir/DependInfo.cmake"
   "src/base/CMakeFiles/Base.dir/DependInfo.cmake"
   )

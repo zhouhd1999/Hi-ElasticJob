@@ -233,6 +233,33 @@ DBManager.cc.s:
 	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/DBManager.cc.s
 .PHONY : DBManager.cc.s
 
+RedisController.o: RedisController.cc.o
+
+.PHONY : RedisController.o
+
+# target to build an object file
+RedisController.cc.o:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/RedisController.cc.o
+.PHONY : RedisController.cc.o
+
+RedisController.i: RedisController.cc.i
+
+.PHONY : RedisController.i
+
+# target to preprocess a source file
+RedisController.cc.i:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/RedisController.cc.i
+.PHONY : RedisController.cc.i
+
+RedisController.s: RedisController.cc.s
+
+.PHONY : RedisController.s
+
+# target to generate assembly for a file
+RedisController.cc.s:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/RedisController.cc.s
+.PHONY : RedisController.cc.s
+
 ThreadUtils.o: ThreadUtils.cc.o
 
 .PHONY : ThreadUtils.o
@@ -308,6 +335,9 @@ help:
 	@echo "... DBManager.o"
 	@echo "... DBManager.i"
 	@echo "... DBManager.s"
+	@echo "... RedisController.o"
+	@echo "... RedisController.i"
+	@echo "... RedisController.s"
 	@echo "... ThreadUtils.o"
 	@echo "... ThreadUtils.i"
 	@echo "... ThreadUtils.s"

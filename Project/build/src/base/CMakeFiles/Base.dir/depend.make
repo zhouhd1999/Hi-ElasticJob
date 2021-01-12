@@ -190,6 +190,17 @@ src/base/CMakeFiles/Base.dir/DBManager.cc.o: /usr/local/include/mysql++/uds_conn
 src/base/CMakeFiles/Base.dir/DBManager.cc.o: /usr/local/include/mysql++/vallist.h
 src/base/CMakeFiles/Base.dir/DBManager.cc.o: /usr/local/include/mysql++/wnp_connection.h
 
+src/base/CMakeFiles/Base.dir/RedisController.cc.o: /root/cpp/Common/muduo/build/release-install-cpp11/include/muduo/base/LogStream.h
+src/base/CMakeFiles/Base.dir/RedisController.cc.o: /root/cpp/Common/muduo/build/release-install-cpp11/include/muduo/base/Logging.h
+src/base/CMakeFiles/Base.dir/RedisController.cc.o: /root/cpp/Common/muduo/build/release-install-cpp11/include/muduo/base/StringPiece.h
+src/base/CMakeFiles/Base.dir/RedisController.cc.o: /root/cpp/Common/muduo/build/release-install-cpp11/include/muduo/base/Timestamp.h
+src/base/CMakeFiles/Base.dir/RedisController.cc.o: /root/cpp/Common/muduo/build/release-install-cpp11/include/muduo/base/Types.h
+src/base/CMakeFiles/Base.dir/RedisController.cc.o: /root/cpp/Common/muduo/build/release-install-cpp11/include/muduo/base/copyable.h
+src/base/CMakeFiles/Base.dir/RedisController.cc.o: /root/cpp/Common/muduo/build/release-install-cpp11/include/muduo/base/noncopyable.h
+src/base/CMakeFiles/Base.dir/RedisController.cc.o: ../src/base/RedisController.cc
+src/base/CMakeFiles/Base.dir/RedisController.cc.o: ../src/base/RedisController.h
+src/base/CMakeFiles/Base.dir/RedisController.cc.o: ../src/base/Singleton.h
+
 src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o: /root/cpp/Common/muduo/build/release-install-cpp11/include/muduo/base/LogStream.h
 src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o: /root/cpp/Common/muduo/build/release-install-cpp11/include/muduo/base/Logging.h
 src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o: /root/cpp/Common/muduo/build/release-install-cpp11/include/muduo/base/StringPiece.h

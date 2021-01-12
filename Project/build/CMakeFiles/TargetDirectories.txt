@@ -1,9 +1,10 @@
-/root/cpp/Project/build/CMakeFiles/edit_cache.dir
-/root/cpp/Project/build/CMakeFiles/TimerTest.dir
 /root/cpp/Project/build/CMakeFiles/rebuild_cache.dir
-/root/cpp/Project/build/CMakeFiles/DBTransactionTest.dir
-/root/cpp/Project/build/CMakeFiles/hello.dir
 /root/cpp/Project/build/CMakeFiles/DBCommonTest.dir
+/root/cpp/Project/build/CMakeFiles/RedisTest.dir
+/root/cpp/Project/build/CMakeFiles/hello.dir
+/root/cpp/Project/build/CMakeFiles/DBTransactionTest.dir
+/root/cpp/Project/build/CMakeFiles/TimerTest.dir
+/root/cpp/Project/build/CMakeFiles/edit_cache.dir
 /root/cpp/Project/build/src/base/CMakeFiles/rebuild_cache.dir
 /root/cpp/Project/build/src/base/CMakeFiles/Base.dir
 /root/cpp/Project/build/src/base/CMakeFiles/edit_cache.dir
