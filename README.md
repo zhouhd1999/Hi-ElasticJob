@@ -3,36 +3,21 @@
 
 
 ### 目录树
-├── Common      **依赖的三方库，也放进来了**
-
-│   ├──hiredis
-
-│   ├──muduo
-
-│   ├──mysql
-
-│   └──redis-plus-plus
-
+├── Common   **依赖的三方库，也放进来了**
+│  ├──hiredis
+│  ├──muduo
+│  ├──mysql
+│  └──redis-plus-plus
 ├── Project
-
-│   ├── build
-
-│   │   └── bin   **生成的demo都在这个文件夹中**
-
-│   ├── src
-
-│   │   ├── base
-
-│   │   │   ├── test                **base库测试**
-
-│   │   │   ├── CMakeLists.txt      **base库的CMAKE**
-
-│   │   │   └── base库的c++代码
-
-│   │   └── Elastic相关代码
-
-│   └── CMakeLists.txt
-
+│  ├── build
+│  │  └── bin  **生成的demo都在这个文件夹中**
+│  ├── src
+│  │  ├── base
+│  │  │  ├── test        **base库测试**
+│  │  │  ├── CMakeLists.txt   **base库的CMAKE**
+│  │  │  └── base库的c++代码
+│  │  └── Elastic相关代码
+│  └── CMakeLists.txt
 └── README.md
 
 ### 当前依赖
