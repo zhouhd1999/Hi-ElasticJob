@@ -86,6 +86,11 @@ target_link_libraries(DBTransactionTest
   ${Boost_LIBRARIES}
 )
 
+add_executable(GuidTest ./src/base/test/GuidTest.cc)
+target_link_libraries(GuidTest
+  Base
+)
+
 add_executable(RedisTest ./src/base/test/RedisTest.cc)
 target_link_libraries(RedisTest
   ${muduo_net}

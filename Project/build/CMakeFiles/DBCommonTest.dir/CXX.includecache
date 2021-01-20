@@ -58,14 +58,26 @@ mutex
 memory
 -
 
+/root/cpp/Project/src/base/StringUtils.h
+mysql++.h
+-
+iostream
+-
+vector
+-
+
 /root/cpp/Project/src/base/test/DBCommonTest.cc
 ../ConfigManager.h
 /root/cpp/Project/src/base/ConfigManager.h
 ../DBManager.h
 /root/cpp/Project/src/base/DBManager.h
+../StringUtils.h
+/root/cpp/Project/src/base/StringUtils.h
 iostream
 -
 vector
+-
+typeinfo
 -
 mysql++.h
 -

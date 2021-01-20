@@ -1,11 +1,15 @@
 #include "../ConfigManager.h"
 #include "../DBManager.h"
+#include "../StringUtils.h"
 
 #include <iostream>
 #include <vector>
+#include <typeinfo>
 #include <mysql++.h>
 
+
 using namespace base;
+using namespace std;
 using namespace mysqlpp;
 
 int main(int argc, char *argv[])
@@ -17,14 +21,25 @@ int main(int argc, char *argv[])
     DBConnManager::Instance().InitDBConnManager(param);
 
     DBBaseConn db_conn;
-    db_conn.Execute("INSERT INTO demo (id, name) VALUES (4, \"qwuiuqw\")");
-
+    // db_conn.Execute("INSERT INTO demo (id, name) VALUES (4, \"qwuiuqw\")");
+    std::ostringstream os;
+    std::string s = "哈哈";
+    os << "SELECT * FROM demo WHERE name = " << sqlfmt("哈哈");
     // 创建接受数据集对象
     StoreQueryResult res;
-    db_conn.ExecuteQuary("SELECT * FROM demo", res);
+    db_conn.ExecuteQuary(os.str(), res);
     for (unsigned int i = 0; i < res.size(); ++i)
     {
-        std::cout << res[i]["id"] << " " << res[i]["name"] << std::endl;
+        std::string id = to_str(res[i]["id"]);
+        std::cout << id << std::endl;   
+    }
+
+    string s1("1,2,3,4,5,6,7,8,9");
+    vector<string> vStr;
+    String2Array(vStr,s1);
+    for (auto& a : vStr)
+    {
+        cout << a << endl;
     }
     
     /*

@@ -136,4 +136,18 @@ namespace base
         LOG_INFO << "Transcation rollback";
         FreeConn();
     }
+
+    // string DBBaseConn::to_str(const mysqlpp::String& in)
+    // {
+    //     std::string temp;
+    //     in.to_string(temp);
+    //     return temp;
+    // }
+
+    // int DBBaseConn::to_int(const mysqlpp::String& in)
+    // {
+    //     std::string temp;
+    //     in.to_string(temp);
+    //     return atoi(temp.c_str());
+    // }
 } // namespace base

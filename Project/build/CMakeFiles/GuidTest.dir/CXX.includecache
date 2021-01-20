@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/cpp/Project/src/base/GuidUtil.h
+uuid/uuid.h
+-
+string
+-
+
+/root/cpp/Project/src/base/test/GuidTest.cc
+../GuidUtil.h
+/root/cpp/Project/src/base/GuidUtil.h
+iostream
+-
+

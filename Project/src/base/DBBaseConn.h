@@ -44,6 +44,11 @@ namespace base
         // 执行事务中的sql
         bool DoTranSql();
 
+        
+        // string to_str(const mysqlpp::String& in);
+
+        // int to_int(const mysqlpp::String& in);
+        
     private:
         typedef boost::shared_mutex CRWMutex;
         typedef boost::shared_lock<CRWMutex> CReadLock;  // 读锁
@@ -54,6 +59,7 @@ namespace base
         shared_ptr<Transaction> trans_ = nullptr;
         Connection* conn_ = nullptr;   // mysql++内部连接池自动管理创建的Connection对象，不用使用智能指针
     };
+
 } // namespace base
 
 #endif
