@@ -5,6 +5,8 @@
 #include <iostream>
 #include <vector>
 
+#include <boost/format.hpp>
+
 using namespace std;
 
 namespace base
@@ -67,6 +69,14 @@ namespace base
         }
         str += vStr[vStr.size()-1];
         return sqlfmt(str);
+    }
+
+    // 使用boost库格式化字符串
+    string strfmt(const char * _Format, const uint16_t data)
+    {
+        boost::format fmt(_Format);
+        fmt % data;
+        return fmt.str();
     }
 }
 

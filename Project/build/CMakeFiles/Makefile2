@@ -65,13 +65,50 @@ CMAKE_SOURCE_DIR = /root/cpp/Project
 CMAKE_BINARY_DIR = /root/cpp/Project/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/TimerTest.dir
+
+# All Build rule for target.
+CMakeFiles/TimerTest.dir/all: src/base/CMakeFiles/Base.dir/all
+	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/depend
+	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=23,24 "Built target TimerTest"
+.PHONY : CMakeFiles/TimerTest.dir/all
+
+# Include target in all.
+all: CMakeFiles/TimerTest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TimerTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TimerTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
+.PHONY : CMakeFiles/TimerTest.dir/rule
+
+# Convenience name for target.
+TimerTest: CMakeFiles/TimerTest.dir/rule
+
+.PHONY : TimerTest
+
+# clean rule for target.
+CMakeFiles/TimerTest.dir/clean:
+	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/clean
+.PHONY : CMakeFiles/TimerTest.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/TimerTest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/DBCommonTest.dir
 
 # All Build rule for target.
 CMakeFiles/DBCommonTest.dir/all: src/base/CMakeFiles/Base.dir/all
 	$(MAKE) -f CMakeFiles/DBCommonTest.dir/build.make CMakeFiles/DBCommonTest.dir/depend
 	$(MAKE) -f CMakeFiles/DBCommonTest.dir/build.make CMakeFiles/DBCommonTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=10,11 "Built target DBCommonTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=13,14 "Built target DBCommonTest"
 .PHONY : CMakeFiles/DBCommonTest.dir/all
 
 # Include target in all.
@@ -81,7 +118,7 @@ all: CMakeFiles/DBCommonTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DBCommonTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DBCommonTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/DBCommonTest.dir/rule
@@ -108,7 +145,7 @@ clean: CMakeFiles/DBCommonTest.dir/clean
 CMakeFiles/RedisTest.dir/all: src/base/CMakeFiles/Base.dir/all
 	$(MAKE) -f CMakeFiles/RedisTest.dir/build.make CMakeFiles/RedisTest.dir/depend
 	$(MAKE) -f CMakeFiles/RedisTest.dir/build.make CMakeFiles/RedisTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=16,17 "Built target RedisTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=19,20 "Built target RedisTest"
 .PHONY : CMakeFiles/RedisTest.dir/all
 
 # Include target in all.
@@ -118,7 +155,7 @@ all: CMakeFiles/RedisTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RedisTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/RedisTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/RedisTest.dir/rule
@@ -145,7 +182,7 @@ clean: CMakeFiles/RedisTest.dir/clean
 CMakeFiles/hello.dir/all: src/base/CMakeFiles/Base.dir/all
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/depend
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=20,21 "Built target hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=25,26 "Built target hello"
 .PHONY : CMakeFiles/hello.dir/all
 
 # Include target in all.
@@ -155,7 +192,7 @@ all: CMakeFiles/hello.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hello.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hello.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/hello.dir/rule
@@ -182,7 +219,7 @@ clean: CMakeFiles/hello.dir/clean
 CMakeFiles/DBTransactionTest.dir/all: src/base/CMakeFiles/Base.dir/all
 	$(MAKE) -f CMakeFiles/DBTransactionTest.dir/build.make CMakeFiles/DBTransactionTest.dir/depend
 	$(MAKE) -f CMakeFiles/DBTransactionTest.dir/build.make CMakeFiles/DBTransactionTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=12,13 "Built target DBTransactionTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=15,16 "Built target DBTransactionTest"
 .PHONY : CMakeFiles/DBTransactionTest.dir/all
 
 # Include target in all.
@@ -192,7 +229,7 @@ all: CMakeFiles/DBTransactionTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DBTransactionTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DBTransactionTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/DBTransactionTest.dir/rule
@@ -219,7 +256,7 @@ clean: CMakeFiles/DBTransactionTest.dir/clean
 CMakeFiles/GuidTest.dir/all: src/base/CMakeFiles/Base.dir/all
 	$(MAKE) -f CMakeFiles/GuidTest.dir/build.make CMakeFiles/GuidTest.dir/depend
 	$(MAKE) -f CMakeFiles/GuidTest.dir/build.make CMakeFiles/GuidTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=14,15 "Built target GuidTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=17,18 "Built target GuidTest"
 .PHONY : CMakeFiles/GuidTest.dir/all
 
 # Include target in all.
@@ -229,7 +266,7 @@ all: CMakeFiles/GuidTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GuidTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/GuidTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/GuidTest.dir/rule
@@ -250,39 +287,39 @@ clean: CMakeFiles/GuidTest.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/TimerTest.dir
+# Target rules for target CMakeFiles/StringTest.dir
 
 # All Build rule for target.
-CMakeFiles/TimerTest.dir/all: src/base/CMakeFiles/Base.dir/all
-	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/depend
-	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=18,19 "Built target TimerTest"
-.PHONY : CMakeFiles/TimerTest.dir/all
+CMakeFiles/StringTest.dir/all: src/base/CMakeFiles/Base.dir/all
+	$(MAKE) -f CMakeFiles/StringTest.dir/build.make CMakeFiles/StringTest.dir/depend
+	$(MAKE) -f CMakeFiles/StringTest.dir/build.make CMakeFiles/StringTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=21,22 "Built target StringTest"
+.PHONY : CMakeFiles/StringTest.dir/all
 
 # Include target in all.
-all: CMakeFiles/TimerTest.dir/all
+all: CMakeFiles/StringTest.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/TimerTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 11
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TimerTest.dir/all
+CMakeFiles/StringTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/StringTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
-.PHONY : CMakeFiles/TimerTest.dir/rule
+.PHONY : CMakeFiles/StringTest.dir/rule
 
 # Convenience name for target.
-TimerTest: CMakeFiles/TimerTest.dir/rule
+StringTest: CMakeFiles/StringTest.dir/rule
 
-.PHONY : TimerTest
-
-# clean rule for target.
-CMakeFiles/TimerTest.dir/clean:
-	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/clean
-.PHONY : CMakeFiles/TimerTest.dir/clean
+.PHONY : StringTest
 
 # clean rule for target.
-clean: CMakeFiles/TimerTest.dir/clean
+CMakeFiles/StringTest.dir/clean:
+	$(MAKE) -f CMakeFiles/StringTest.dir/build.make CMakeFiles/StringTest.dir/clean
+.PHONY : CMakeFiles/StringTest.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/StringTest.dir/clean
 
 .PHONY : clean
 
@@ -311,7 +348,7 @@ src/base/preinstall:
 src/base/CMakeFiles/Base.dir/all:
 	$(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/depend
 	$(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target Base"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target Base"
 .PHONY : src/base/CMakeFiles/Base.dir/all
 
 # Include target in all.
@@ -321,7 +358,7 @@ all: src/base/CMakeFiles/Base.dir/all
 
 # Build rule for subdir invocation for target.
 src/base/CMakeFiles/Base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 src/base/CMakeFiles/Base.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
 .PHONY : src/base/CMakeFiles/Base.dir/rule

@@ -3,10 +3,13 @@ file(REMOVE_RECURSE
   "CMakeFiles/Base.dir/DBBaseConn.cc.o"
   "CMakeFiles/Base.dir/DBConnPool.cc.o"
   "CMakeFiles/Base.dir/DBManager.cc.o"
+  "CMakeFiles/Base.dir/Error.cc.o"
   "CMakeFiles/Base.dir/GuidUtil.cc.o"
   "CMakeFiles/Base.dir/RedisController.cc.o"
   "CMakeFiles/Base.dir/ThreadUtils.cc.o"
+  "CMakeFiles/Base.dir/Time.cc.o"
   "CMakeFiles/Base.dir/Timer.cc.o"
+  "CMakeFiles/Base.dir/TimerCounter.cc.o"
   "../../lib/libBase.pdb"
   "../../lib/libBase.a"
 )

@@ -102,6 +102,11 @@ target_link_libraries(RedisTest
   ${Boost_LIBRARIES}
 )
 
+add_executable(StringTest ./src/base/test/StringTest.cc)
+target_link_libraries(StringTest
+  Base
+)
+
 add_executable(TimerTest ./src/base/test/TimerTest.cc)
 target_link_libraries(TimerTest
   ${muduo_net}

@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named TimerTest
+
+# Build rule for target.
+TimerTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TimerTest
+.PHONY : TimerTest
+
+# fast build rule for target.
+TimerTest/fast:
+	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/build
+.PHONY : TimerTest/fast
+
+#=============================================================================
 # Target rules for targets named DBCommonTest
 
 # Build rule for target.
@@ -176,17 +189,17 @@ GuidTest/fast:
 .PHONY : GuidTest/fast
 
 #=============================================================================
-# Target rules for targets named TimerTest
+# Target rules for targets named StringTest
 
 # Build rule for target.
-TimerTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TimerTest
-.PHONY : TimerTest
+StringTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 StringTest
+.PHONY : StringTest
 
 # fast build rule for target.
-TimerTest/fast:
-	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/build
-.PHONY : TimerTest/fast
+StringTest/fast:
+	$(MAKE) -f CMakeFiles/StringTest.dir/build.make CMakeFiles/StringTest.dir/build
+.PHONY : StringTest/fast
 
 #=============================================================================
 # Target rules for targets named Base
@@ -309,6 +322,33 @@ src/base/test/RedisTest.cc.s:
 	$(MAKE) -f CMakeFiles/RedisTest.dir/build.make CMakeFiles/RedisTest.dir/src/base/test/RedisTest.cc.s
 .PHONY : src/base/test/RedisTest.cc.s
 
+src/base/test/StringTest.o: src/base/test/StringTest.cc.o
+
+.PHONY : src/base/test/StringTest.o
+
+# target to build an object file
+src/base/test/StringTest.cc.o:
+	$(MAKE) -f CMakeFiles/StringTest.dir/build.make CMakeFiles/StringTest.dir/src/base/test/StringTest.cc.o
+.PHONY : src/base/test/StringTest.cc.o
+
+src/base/test/StringTest.i: src/base/test/StringTest.cc.i
+
+.PHONY : src/base/test/StringTest.i
+
+# target to preprocess a source file
+src/base/test/StringTest.cc.i:
+	$(MAKE) -f CMakeFiles/StringTest.dir/build.make CMakeFiles/StringTest.dir/src/base/test/StringTest.cc.i
+.PHONY : src/base/test/StringTest.cc.i
+
+src/base/test/StringTest.s: src/base/test/StringTest.cc.s
+
+.PHONY : src/base/test/StringTest.s
+
+# target to generate assembly for a file
+src/base/test/StringTest.cc.s:
+	$(MAKE) -f CMakeFiles/StringTest.dir/build.make CMakeFiles/StringTest.dir/src/base/test/StringTest.cc.s
+.PHONY : src/base/test/StringTest.cc.s
+
 src/base/test/TimerTest.o: src/base/test/TimerTest.cc.o
 
 .PHONY : src/base/test/TimerTest.o
@@ -371,12 +411,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... TimerTest"
 	@echo "... DBCommonTest"
 	@echo "... RedisTest"
 	@echo "... hello"
 	@echo "... DBTransactionTest"
 	@echo "... GuidTest"
-	@echo "... TimerTest"
+	@echo "... StringTest"
 	@echo "... Base"
 	@echo "... src/base/test/DBCommonTest.o"
 	@echo "... src/base/test/DBCommonTest.i"
@@ -390,6 +431,9 @@ help:
 	@echo "... src/base/test/RedisTest.o"
 	@echo "... src/base/test/RedisTest.i"
 	@echo "... src/base/test/RedisTest.s"
+	@echo "... src/base/test/StringTest.o"
+	@echo "... src/base/test/StringTest.i"
+	@echo "... src/base/test/StringTest.s"
 	@echo "... src/base/test/TimerTest.o"
 	@echo "... src/base/test/TimerTest.i"
 	@echo "... src/base/test/TimerTest.s"

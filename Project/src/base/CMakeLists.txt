@@ -7,6 +7,8 @@ set(BASE_SRCS
     "./DBConnPool.h"
     "./DBManager.cc"
     "./DBManager.h"
+    "./Error.cc"
+    "./Error.h"
     "./GuidUtil.cc"
     "./GuidUtil.h"
     "./RedisController.cc"
@@ -15,8 +17,12 @@ set(BASE_SRCS
     "./StringUtils.h"
     "./ThreadUtils.cc"
     "./ThreadUtils.h"
+    "./Time.cc"
+    "./Time.h"
     "./Timer.cc"
     "./Timer.h"
+    "./TimerCounter.cc"
+    "./TimerCounter.h"
 )
 
 add_library(Base

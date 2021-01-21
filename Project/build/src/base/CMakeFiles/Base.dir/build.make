@@ -109,9 +109,22 @@ src/base/CMakeFiles/Base.dir/DBManager.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Base.dir/DBManager.cc.s"
 	cd /root/cpp/Project/build/src/base && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/cpp/Project/src/base/DBManager.cc -o CMakeFiles/Base.dir/DBManager.cc.s
 
+src/base/CMakeFiles/Base.dir/Error.cc.o: src/base/CMakeFiles/Base.dir/flags.make
+src/base/CMakeFiles/Base.dir/Error.cc.o: ../src/base/Error.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/base/CMakeFiles/Base.dir/Error.cc.o"
+	cd /root/cpp/Project/build/src/base && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Base.dir/Error.cc.o -c /root/cpp/Project/src/base/Error.cc
+
+src/base/CMakeFiles/Base.dir/Error.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Base.dir/Error.cc.i"
+	cd /root/cpp/Project/build/src/base && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/cpp/Project/src/base/Error.cc > CMakeFiles/Base.dir/Error.cc.i
+
+src/base/CMakeFiles/Base.dir/Error.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Base.dir/Error.cc.s"
+	cd /root/cpp/Project/build/src/base && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/cpp/Project/src/base/Error.cc -o CMakeFiles/Base.dir/Error.cc.s
+
 src/base/CMakeFiles/Base.dir/GuidUtil.cc.o: src/base/CMakeFiles/Base.dir/flags.make
 src/base/CMakeFiles/Base.dir/GuidUtil.cc.o: ../src/base/GuidUtil.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/base/CMakeFiles/Base.dir/GuidUtil.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/base/CMakeFiles/Base.dir/GuidUtil.cc.o"
 	cd /root/cpp/Project/build/src/base && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Base.dir/GuidUtil.cc.o -c /root/cpp/Project/src/base/GuidUtil.cc
 
 src/base/CMakeFiles/Base.dir/GuidUtil.cc.i: cmake_force
@@ -124,7 +137,7 @@ src/base/CMakeFiles/Base.dir/GuidUtil.cc.s: cmake_force
 
 src/base/CMakeFiles/Base.dir/RedisController.cc.o: src/base/CMakeFiles/Base.dir/flags.make
 src/base/CMakeFiles/Base.dir/RedisController.cc.o: ../src/base/RedisController.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/base/CMakeFiles/Base.dir/RedisController.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/base/CMakeFiles/Base.dir/RedisController.cc.o"
 	cd /root/cpp/Project/build/src/base && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Base.dir/RedisController.cc.o -c /root/cpp/Project/src/base/RedisController.cc
 
 src/base/CMakeFiles/Base.dir/RedisController.cc.i: cmake_force
@@ -137,7 +150,7 @@ src/base/CMakeFiles/Base.dir/RedisController.cc.s: cmake_force
 
 src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o: src/base/CMakeFiles/Base.dir/flags.make
 src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o: ../src/base/ThreadUtils.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o"
 	cd /root/cpp/Project/build/src/base && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Base.dir/ThreadUtils.cc.o -c /root/cpp/Project/src/base/ThreadUtils.cc
 
 src/base/CMakeFiles/Base.dir/ThreadUtils.cc.i: cmake_force
@@ -148,9 +161,22 @@ src/base/CMakeFiles/Base.dir/ThreadUtils.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Base.dir/ThreadUtils.cc.s"
 	cd /root/cpp/Project/build/src/base && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/cpp/Project/src/base/ThreadUtils.cc -o CMakeFiles/Base.dir/ThreadUtils.cc.s
 
+src/base/CMakeFiles/Base.dir/Time.cc.o: src/base/CMakeFiles/Base.dir/flags.make
+src/base/CMakeFiles/Base.dir/Time.cc.o: ../src/base/Time.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/base/CMakeFiles/Base.dir/Time.cc.o"
+	cd /root/cpp/Project/build/src/base && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Base.dir/Time.cc.o -c /root/cpp/Project/src/base/Time.cc
+
+src/base/CMakeFiles/Base.dir/Time.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Base.dir/Time.cc.i"
+	cd /root/cpp/Project/build/src/base && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/cpp/Project/src/base/Time.cc > CMakeFiles/Base.dir/Time.cc.i
+
+src/base/CMakeFiles/Base.dir/Time.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Base.dir/Time.cc.s"
+	cd /root/cpp/Project/build/src/base && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/cpp/Project/src/base/Time.cc -o CMakeFiles/Base.dir/Time.cc.s
+
 src/base/CMakeFiles/Base.dir/Timer.cc.o: src/base/CMakeFiles/Base.dir/flags.make
 src/base/CMakeFiles/Base.dir/Timer.cc.o: ../src/base/Timer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/base/CMakeFiles/Base.dir/Timer.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/base/CMakeFiles/Base.dir/Timer.cc.o"
 	cd /root/cpp/Project/build/src/base && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Base.dir/Timer.cc.o -c /root/cpp/Project/src/base/Timer.cc
 
 src/base/CMakeFiles/Base.dir/Timer.cc.i: cmake_force
@@ -161,16 +187,32 @@ src/base/CMakeFiles/Base.dir/Timer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Base.dir/Timer.cc.s"
 	cd /root/cpp/Project/build/src/base && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/cpp/Project/src/base/Timer.cc -o CMakeFiles/Base.dir/Timer.cc.s
 
+src/base/CMakeFiles/Base.dir/TimerCounter.cc.o: src/base/CMakeFiles/Base.dir/flags.make
+src/base/CMakeFiles/Base.dir/TimerCounter.cc.o: ../src/base/TimerCounter.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/base/CMakeFiles/Base.dir/TimerCounter.cc.o"
+	cd /root/cpp/Project/build/src/base && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Base.dir/TimerCounter.cc.o -c /root/cpp/Project/src/base/TimerCounter.cc
+
+src/base/CMakeFiles/Base.dir/TimerCounter.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Base.dir/TimerCounter.cc.i"
+	cd /root/cpp/Project/build/src/base && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/cpp/Project/src/base/TimerCounter.cc > CMakeFiles/Base.dir/TimerCounter.cc.i
+
+src/base/CMakeFiles/Base.dir/TimerCounter.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Base.dir/TimerCounter.cc.s"
+	cd /root/cpp/Project/build/src/base && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/cpp/Project/src/base/TimerCounter.cc -o CMakeFiles/Base.dir/TimerCounter.cc.s
+
 # Object files for target Base
 Base_OBJECTS = \
 "CMakeFiles/Base.dir/ConfigManager.cc.o" \
 "CMakeFiles/Base.dir/DBBaseConn.cc.o" \
 "CMakeFiles/Base.dir/DBConnPool.cc.o" \
 "CMakeFiles/Base.dir/DBManager.cc.o" \
+"CMakeFiles/Base.dir/Error.cc.o" \
 "CMakeFiles/Base.dir/GuidUtil.cc.o" \
 "CMakeFiles/Base.dir/RedisController.cc.o" \
 "CMakeFiles/Base.dir/ThreadUtils.cc.o" \
-"CMakeFiles/Base.dir/Timer.cc.o"
+"CMakeFiles/Base.dir/Time.cc.o" \
+"CMakeFiles/Base.dir/Timer.cc.o" \
+"CMakeFiles/Base.dir/TimerCounter.cc.o"
 
 # External object files for target Base
 Base_EXTERNAL_OBJECTS =
@@ -179,13 +221,16 @@ lib/libBase.a: src/base/CMakeFiles/Base.dir/ConfigManager.cc.o
 lib/libBase.a: src/base/CMakeFiles/Base.dir/DBBaseConn.cc.o
 lib/libBase.a: src/base/CMakeFiles/Base.dir/DBConnPool.cc.o
 lib/libBase.a: src/base/CMakeFiles/Base.dir/DBManager.cc.o
+lib/libBase.a: src/base/CMakeFiles/Base.dir/Error.cc.o
 lib/libBase.a: src/base/CMakeFiles/Base.dir/GuidUtil.cc.o
 lib/libBase.a: src/base/CMakeFiles/Base.dir/RedisController.cc.o
 lib/libBase.a: src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o
+lib/libBase.a: src/base/CMakeFiles/Base.dir/Time.cc.o
 lib/libBase.a: src/base/CMakeFiles/Base.dir/Timer.cc.o
+lib/libBase.a: src/base/CMakeFiles/Base.dir/TimerCounter.cc.o
 lib/libBase.a: src/base/CMakeFiles/Base.dir/build.make
 lib/libBase.a: src/base/CMakeFiles/Base.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library ../../lib/libBase.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library ../../lib/libBase.a"
 	cd /root/cpp/Project/build/src/base && $(CMAKE_COMMAND) -P CMakeFiles/Base.dir/cmake_clean_target.cmake
 	cd /root/cpp/Project/build/src/base && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Base.dir/link.txt --verbose=$(VERBOSE)
 

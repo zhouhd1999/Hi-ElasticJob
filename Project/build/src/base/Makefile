@@ -233,6 +233,33 @@ DBManager.cc.s:
 	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/DBManager.cc.s
 .PHONY : DBManager.cc.s
 
+Error.o: Error.cc.o
+
+.PHONY : Error.o
+
+# target to build an object file
+Error.cc.o:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/Error.cc.o
+.PHONY : Error.cc.o
+
+Error.i: Error.cc.i
+
+.PHONY : Error.i
+
+# target to preprocess a source file
+Error.cc.i:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/Error.cc.i
+.PHONY : Error.cc.i
+
+Error.s: Error.cc.s
+
+.PHONY : Error.s
+
+# target to generate assembly for a file
+Error.cc.s:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/Error.cc.s
+.PHONY : Error.cc.s
+
 GuidUtil.o: GuidUtil.cc.o
 
 .PHONY : GuidUtil.o
@@ -314,6 +341,33 @@ ThreadUtils.cc.s:
 	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/ThreadUtils.cc.s
 .PHONY : ThreadUtils.cc.s
 
+Time.o: Time.cc.o
+
+.PHONY : Time.o
+
+# target to build an object file
+Time.cc.o:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/Time.cc.o
+.PHONY : Time.cc.o
+
+Time.i: Time.cc.i
+
+.PHONY : Time.i
+
+# target to preprocess a source file
+Time.cc.i:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/Time.cc.i
+.PHONY : Time.cc.i
+
+Time.s: Time.cc.s
+
+.PHONY : Time.s
+
+# target to generate assembly for a file
+Time.cc.s:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/Time.cc.s
+.PHONY : Time.cc.s
+
 Timer.o: Timer.cc.o
 
 .PHONY : Timer.o
@@ -341,6 +395,33 @@ Timer.cc.s:
 	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/Timer.cc.s
 .PHONY : Timer.cc.s
 
+TimerCounter.o: TimerCounter.cc.o
+
+.PHONY : TimerCounter.o
+
+# target to build an object file
+TimerCounter.cc.o:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/TimerCounter.cc.o
+.PHONY : TimerCounter.cc.o
+
+TimerCounter.i: TimerCounter.cc.i
+
+.PHONY : TimerCounter.i
+
+# target to preprocess a source file
+TimerCounter.cc.i:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/TimerCounter.cc.i
+.PHONY : TimerCounter.cc.i
+
+TimerCounter.s: TimerCounter.cc.s
+
+.PHONY : TimerCounter.s
+
+# target to generate assembly for a file
+TimerCounter.cc.s:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/TimerCounter.cc.s
+.PHONY : TimerCounter.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -362,6 +443,9 @@ help:
 	@echo "... DBManager.o"
 	@echo "... DBManager.i"
 	@echo "... DBManager.s"
+	@echo "... Error.o"
+	@echo "... Error.i"
+	@echo "... Error.s"
 	@echo "... GuidUtil.o"
 	@echo "... GuidUtil.i"
 	@echo "... GuidUtil.s"
@@ -371,9 +455,15 @@ help:
 	@echo "... ThreadUtils.o"
 	@echo "... ThreadUtils.i"
 	@echo "... ThreadUtils.s"
+	@echo "... Time.o"
+	@echo "... Time.i"
+	@echo "... Time.s"
 	@echo "... Timer.o"
 	@echo "... Timer.i"
 	@echo "... Timer.s"
+	@echo "... TimerCounter.o"
+	@echo "... TimerCounter.i"
+	@echo "... TimerCounter.s"
 .PHONY : help
 
 

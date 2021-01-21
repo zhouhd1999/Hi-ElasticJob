@@ -190,6 +190,9 @@ src/base/CMakeFiles/Base.dir/DBManager.cc.o: /usr/local/include/mysql++/uds_conn
 src/base/CMakeFiles/Base.dir/DBManager.cc.o: /usr/local/include/mysql++/vallist.h
 src/base/CMakeFiles/Base.dir/DBManager.cc.o: /usr/local/include/mysql++/wnp_connection.h
 
+src/base/CMakeFiles/Base.dir/Error.cc.o: ../src/base/Error.cc
+src/base/CMakeFiles/Base.dir/Error.cc.o: ../src/base/Error.h
+
 src/base/CMakeFiles/Base.dir/GuidUtil.cc.o: ../src/base/GuidUtil.cc
 src/base/CMakeFiles/Base.dir/GuidUtil.cc.o: ../src/base/GuidUtil.h
 
@@ -214,7 +217,13 @@ src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o: /root/cpp/Common/muduo/build/rele
 src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o: ../src/base/ThreadUtils.cc
 src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o: ../src/base/ThreadUtils.h
 
+src/base/CMakeFiles/Base.dir/Time.cc.o: ../src/base/Time.cc
+src/base/CMakeFiles/Base.dir/Time.cc.o: ../src/base/Time.h
+
 src/base/CMakeFiles/Base.dir/Timer.cc.o: ../src/base/ThreadUtils.h
 src/base/CMakeFiles/Base.dir/Timer.cc.o: ../src/base/Timer.cc
 src/base/CMakeFiles/Base.dir/Timer.cc.o: ../src/base/Timer.h
+
+src/base/CMakeFiles/Base.dir/TimerCounter.cc.o: ../src/base/TimerCounter.cc
+src/base/CMakeFiles/Base.dir/TimerCounter.cc.o: ../src/base/TimerCounter.h
 
