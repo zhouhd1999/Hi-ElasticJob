@@ -28,7 +28,7 @@ namespace base
             stop_time = std::chrono::steady_clock::now();
         }
 
-        auto span = std::chrono::duration_cast< std::chrono::duration<double> >
+        auto span = std::chrono::duration_cast<std::chrono::duration<double>>
                 (stop_time - start_time_);
 
         return span.count();
