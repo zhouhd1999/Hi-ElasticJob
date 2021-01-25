@@ -36,7 +36,7 @@ namespace base
         // 获取任务数量
         int GetWorkTaskCount() const;
 
-        std::string GetName() const { ptr_data_->name_; }
+        std::string GetName() const;
 
     private:
         // 执行任务

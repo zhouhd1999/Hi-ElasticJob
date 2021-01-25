@@ -205,4 +205,9 @@ namespace base
         std::lock_guard<std::mutex> lock_task(ptr_data_->mutex_task_);
         return ptr_data_->tasks_.size();
     }
+
+    std::string MessageLoopDyThreadPool::GetName() const
+    {
+        return ptr_data_->name_;
+    }
 } // namespace base
