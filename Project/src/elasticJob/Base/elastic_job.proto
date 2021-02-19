@@ -1,0 +1,58 @@
+syntax = "proto3";
+package elasticjob.proto;
+
+service ElasticJobService {
+  rpc Ping(PingRequest) returns(PongResponse) {}
+  rpc AddJob(AddJobRequest) returns(AddJobReply) {}
+  rpc DeleteJob(DeleteJobRequest) returns(DeleteJobReply) {}
+  rpc GetJobResult(GetJobResultRequest) returns(GetJobResultReply) {}
+}
+
+message ErrorCode {
+  string code = 1;
+  string message = 2;
+}
+
+message JobInfo {
+  string id = 1;
+  string name = 2;
+  string category = 3;
+  int32 priority = 4;
+  string param = 5;
+  int32 shedule_type = 6;
+  string shedule_param = 7;
+  string parallel_strategy = 8;
+  string retry_strategy = 9;
+}
+
+message JobResult {
+  string id = 1;
+  string job_id = 2;
+  int32 status = 3;
+  string result = 4;
+  ErrorCode error_code = 5;
+  int64 start_time = 6;
+  int64 finished_time = 7;
+  int32 failed_count = 8;
+}
+
+message PingRequest {}
+message PongResponse {}
+
+message AddJobRequest { JobInfo job_info = 1; }
+message AddJobReply {
+  ErrorCode err_code = 1;
+  string id = 2;
+}
+
+message DeleteJobRequest { 
+  string id = 1; 
+  string name = 2;
+}
+message DeleteJobReply { ErrorCode err_code = 1; }
+
+message GetJobResultRequest { string job_id = 1; }
+message GetJobResultReply {
+  ErrorCode err_code = 1;
+  JobResult result = 2;
+}

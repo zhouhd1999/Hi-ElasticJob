@@ -1,0 +1,91 @@
+syntax = "proto3";
+
+package elasticjob_service;
+
+service ElasticJobWorker {
+    // 
+    rpc RegisterWorker(RegisterWorkerReqeust) returns (RegisterWorkerReply) {}
+    rpc DeregisterWorker(DeregisterWorkerReqeust) returns (DeregisterWorkerReply) {}
+    rpc SendStats(SendStatsReqeust) returns (SendStatsReply) {}
+    rpc SendRunningJobs(SendRunningJobsRequest) returns (SendRunningJobsReply) {}
+    rpc SendJobResult(SendJobResultRequest) returns (SendJobResultReply) {}
+    rpc ExchangeJob(ExchangeJobRequest) returns (stream ExchangeJobReply) {}
+}
+
+message JobRunningInfo {
+    string id = 1;
+    string job_id = 2;
+    string name = 3;
+    string category = 4;
+    string param = 5;
+}
+
+message WorkerAbility {
+    repeated string categories = 1;
+    int32 max_parallel_job = 2;
+}
+
+message ErrorCode {
+    string code = 1;
+    string message = 2;
+}
+
+message JobResult {
+    string id = 1;
+    string job_id = 2;
+    int32 status = 3;
+    string result = 4;
+    ErrorCode err_code = 5;
+}
+
+message AddNewJobReuqest {
+    JobRunningInfo running_info = 1;
+}
+
+message AddNewJobReply {
+    ErrorCode err_code = 1;
+}
+
+message RegisterWorkerReqeust {
+    WorkerAbility ability = 1;
+}
+message RegisterWorkerReply {
+    ErrorCode err_code = 1;
+}
+
+message DeregisterWorkerReqeust {
+}
+message DeregisterWorkerReply {
+    ErrorCode err_code = 1;
+}
+
+message SendRunningJobsRequest{
+    repeated JobResult job_results = 2;
+}
+
+message SendRunningJobsReply{
+    ErrorCode err_code = 1;
+}
+
+message SendJobResultRequest {
+    JobResult job_results = 1;
+}
+
+message SendJobResultReply {
+    ErrorCode err_code = 1;
+}
+
+message ExchangeJobRequest {
+}
+
+message ExchangeJobReply {
+    ErrorCode err_code = 1;
+    JobRunningInfo running_info = 2;
+}
+
+message SendStatsReqeust {
+    int32 runing_jobs = 1;
+}
+message SendStatsReply {
+    ErrorCode err_code = 1;
+}

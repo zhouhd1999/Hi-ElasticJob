@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libCyclotronic_ElasticJobBase.a  CMakeFiles/Cyclotronic_ElasticJobBase.dir/Base/LogHelper.cc.o CMakeFiles/Cyclotronic_ElasticJobBase.dir/Base/Errors.cc.o CMakeFiles/Cyclotronic_ElasticJobBase.dir/Base/elastic_job.pb.cc.o CMakeFiles/Cyclotronic_ElasticJobBase.dir/Base/elastic_job.grpc.pb.cc.o
+/usr/bin/ranlib ../../lib/libCyclotronic_ElasticJobBase.a

@@ -12,6 +12,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/base"
   "/root/cpp/Common/muduo/build/release-install-cpp11/include"
+  "/usr/local/include"
   "../"
   "/usr/local/include/mysql++"
   "/usr/include/mysql"

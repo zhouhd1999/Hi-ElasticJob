@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libCyclotronic_ElasticJobClient.a  CMakeFiles/Cyclotronic_ElasticJobClient.dir/Client/ElasticJobClientImpl.cc.o
+/usr/bin/ranlib ../../lib/libCyclotronic_ElasticJobClient.a

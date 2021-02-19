@@ -82,11 +82,11 @@ bin/RedisTest: CMakeFiles/RedisTest.dir/build.make
 bin/RedisTest: /root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_net.a
 bin/RedisTest: /root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_base.a
 bin/RedisTest: lib/libBase.a
-bin/RedisTest: /usr/lib/x86_64-linux-gnu/libboost_system.so
-bin/RedisTest: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-bin/RedisTest: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-bin/RedisTest: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-bin/RedisTest: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+bin/RedisTest: /usr/local/lib/libboost_system.so
+bin/RedisTest: /usr/local/lib/libboost_thread.so
+bin/RedisTest: /usr/local/lib/libboost_chrono.so
+bin/RedisTest: /usr/local/lib/libboost_date_time.so
+bin/RedisTest: /usr/local/lib/libboost_atomic.so
 bin/RedisTest: /root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_net.a
 bin/RedisTest: /root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_base.a
 bin/RedisTest: CMakeFiles/RedisTest.dir/link.txt

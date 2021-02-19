@@ -1,26 +1,26 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /root/cpp/Project/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_828da/fast"
-/usr/bin/make -f CMakeFiles/cmTC_828da.dir/build.make CMakeFiles/cmTC_828da.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_57fcd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_57fcd.dir/build.make CMakeFiles/cmTC_57fcd.dir/build
 make[1]: Entering directory '/root/cpp/Project/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_828da.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -g -Wall -Wextra -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -rdynamic    -o CMakeFiles/cmTC_828da.dir/CheckSymbolExists.cxx.o -c /root/cpp/Project/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Building CXX object CMakeFiles/cmTC_57fcd.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -g -Wall -Wextra -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -rdynamic    -o CMakeFiles/cmTC_57fcd.dir/CheckSymbolExists.cxx.o -c /root/cpp/Project/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
 /root/cpp/Project/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
 /root/cpp/Project/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:33: warning: use of old-style cast [-Wold-style-cast]
    return ((int*)(&pthread_create))[argc];
                                  ^
-Linking CXX executable cmTC_828da
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_828da.dir/link.txt --verbose=1
-/usr/bin/c++  -g -Wall -Wextra -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -rdynamic     -rdynamic CMakeFiles/cmTC_828da.dir/CheckSymbolExists.cxx.o  -o cmTC_828da 
-CMakeFiles/cmTC_828da.dir/CheckSymbolExists.cxx.o: In function `main':
+Linking CXX executable cmTC_57fcd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57fcd.dir/link.txt --verbose=1
+/usr/bin/c++  -g -Wall -Wextra -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -rdynamic     -rdynamic CMakeFiles/cmTC_57fcd.dir/CheckSymbolExists.cxx.o  -o cmTC_57fcd 
+CMakeFiles/cmTC_57fcd.dir/CheckSymbolExists.cxx.o: In function `main':
 /root/cpp/Project/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8: undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_828da.dir/build.make:97: recipe for target 'cmTC_828da' failed
-make[1]: *** [cmTC_828da] Error 1
+CMakeFiles/cmTC_57fcd.dir/build.make:86: recipe for target 'cmTC_57fcd' failed
+make[1]: *** [cmTC_57fcd] Error 1
 make[1]: Leaving directory '/root/cpp/Project/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_828da/fast' failed
-make: *** [cmTC_828da/fast] Error 2
+Makefile:121: recipe for target 'cmTC_57fcd/fast' failed
+make: *** [cmTC_57fcd/fast] Error 2
 
 File /root/cpp/Project/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
@@ -40,20 +40,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /root/cpp/Project/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b8668/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b8668.dir/build.make CMakeFiles/cmTC_b8668.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_66758/fast"
+/usr/bin/make -f CMakeFiles/cmTC_66758.dir/build.make CMakeFiles/cmTC_66758.dir/build
 make[1]: Entering directory '/root/cpp/Project/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b8668.dir/CheckFunctionExists.cxx.o
-/usr/bin/c++    -g -Wall -Wextra -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -rdynamic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_b8668.dir/CheckFunctionExists.cxx.o -c /root/cpp/Project/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
-Linking CXX executable cmTC_b8668
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8668.dir/link.txt --verbose=1
-/usr/bin/c++  -g -Wall -Wextra -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -rdynamic -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_b8668.dir/CheckFunctionExists.cxx.o  -o cmTC_b8668 -lpthreads 
+Building CXX object CMakeFiles/cmTC_66758.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -g -Wall -Wextra -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -rdynamic -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_66758.dir/CheckFunctionExists.cxx.o -c /root/cpp/Project/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_66758
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66758.dir/link.txt --verbose=1
+/usr/bin/c++  -g -Wall -Wextra -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -rdynamic -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_66758.dir/CheckFunctionExists.cxx.o  -o cmTC_66758 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_b8668.dir/build.make:97: recipe for target 'cmTC_b8668' failed
-make[1]: *** [cmTC_b8668] Error 1
+CMakeFiles/cmTC_66758.dir/build.make:86: recipe for target 'cmTC_66758' failed
+make[1]: *** [cmTC_66758] Error 1
 make[1]: Leaving directory '/root/cpp/Project/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_b8668/fast' failed
-make: *** [cmTC_b8668/fast] Error 2
+Makefile:121: recipe for target 'cmTC_66758/fast' failed
+make: *** [cmTC_66758/fast] Error 2
 
 

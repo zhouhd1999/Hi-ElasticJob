@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Base.dir/DBManager.cc.o"
   "CMakeFiles/Base.dir/Error.cc.o"
   "CMakeFiles/Base.dir/GuidUtil.cc.o"
+  "CMakeFiles/Base.dir/MessageLoopByThreadPool.cc.o"
   "CMakeFiles/Base.dir/RedisController.cc.o"
   "CMakeFiles/Base.dir/ThreadUtils.cc.o"
   "CMakeFiles/Base.dir/Time.cc.o"

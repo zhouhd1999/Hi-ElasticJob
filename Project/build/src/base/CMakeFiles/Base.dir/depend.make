@@ -196,6 +196,12 @@ src/base/CMakeFiles/Base.dir/Error.cc.o: ../src/base/Error.h
 src/base/CMakeFiles/Base.dir/GuidUtil.cc.o: ../src/base/GuidUtil.cc
 src/base/CMakeFiles/Base.dir/GuidUtil.cc.o: ../src/base/GuidUtil.h
 
+src/base/CMakeFiles/Base.dir/MessageLoopByThreadPool.cc.o: ../src/base/MessageLoopByThreadPool.cc
+src/base/CMakeFiles/Base.dir/MessageLoopByThreadPool.cc.o: ../src/base/MessageLoopByThreadPool.h
+src/base/CMakeFiles/Base.dir/MessageLoopByThreadPool.cc.o: ../src/base/Task.h
+src/base/CMakeFiles/Base.dir/MessageLoopByThreadPool.cc.o: ../src/base/ThreadSafeList.h
+src/base/CMakeFiles/Base.dir/MessageLoopByThreadPool.cc.o: ../src/base/ThreadWrap.h
+
 src/base/CMakeFiles/Base.dir/RedisController.cc.o: /root/cpp/Common/muduo/build/release-install-cpp11/include/muduo/base/LogStream.h
 src/base/CMakeFiles/Base.dir/RedisController.cc.o: /root/cpp/Common/muduo/build/release-install-cpp11/include/muduo/base/Logging.h
 src/base/CMakeFiles/Base.dir/RedisController.cc.o: /root/cpp/Common/muduo/build/release-install-cpp11/include/muduo/base/StringPiece.h

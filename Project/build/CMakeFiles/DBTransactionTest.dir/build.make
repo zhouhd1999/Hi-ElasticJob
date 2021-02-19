@@ -82,11 +82,11 @@ bin/DBTransactionTest: CMakeFiles/DBTransactionTest.dir/build.make
 bin/DBTransactionTest: /root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_net.a
 bin/DBTransactionTest: /root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_base.a
 bin/DBTransactionTest: lib/libBase.a
-bin/DBTransactionTest: /usr/lib/x86_64-linux-gnu/libboost_system.so
-bin/DBTransactionTest: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-bin/DBTransactionTest: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-bin/DBTransactionTest: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-bin/DBTransactionTest: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+bin/DBTransactionTest: /usr/local/lib/libboost_system.so
+bin/DBTransactionTest: /usr/local/lib/libboost_thread.so
+bin/DBTransactionTest: /usr/local/lib/libboost_chrono.so
+bin/DBTransactionTest: /usr/local/lib/libboost_date_time.so
+bin/DBTransactionTest: /usr/local/lib/libboost_atomic.so
 bin/DBTransactionTest: /root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_net.a
 bin/DBTransactionTest: /root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_base.a
 bin/DBTransactionTest: CMakeFiles/DBTransactionTest.dir/link.txt

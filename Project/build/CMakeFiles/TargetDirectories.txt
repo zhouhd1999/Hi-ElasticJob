@@ -10,3 +10,9 @@
 /root/cpp/Project/build/src/base/CMakeFiles/rebuild_cache.dir
 /root/cpp/Project/build/src/base/CMakeFiles/Base.dir
 /root/cpp/Project/build/src/base/CMakeFiles/edit_cache.dir
+/root/cpp/Project/build/src/elasticJob/CMakeFiles/edit_cache.dir
+/root/cpp/Project/build/src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir
+/root/cpp/Project/build/src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir
+/root/cpp/Project/build/src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir
+/root/cpp/Project/build/src/elasticJob/CMakeFiles/rebuild_cache.dir
+/root/cpp/Project/build/src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir

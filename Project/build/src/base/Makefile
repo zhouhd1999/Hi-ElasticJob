@@ -287,6 +287,33 @@ GuidUtil.cc.s:
 	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/GuidUtil.cc.s
 .PHONY : GuidUtil.cc.s
 
+MessageLoopByThreadPool.o: MessageLoopByThreadPool.cc.o
+
+.PHONY : MessageLoopByThreadPool.o
+
+# target to build an object file
+MessageLoopByThreadPool.cc.o:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/MessageLoopByThreadPool.cc.o
+.PHONY : MessageLoopByThreadPool.cc.o
+
+MessageLoopByThreadPool.i: MessageLoopByThreadPool.cc.i
+
+.PHONY : MessageLoopByThreadPool.i
+
+# target to preprocess a source file
+MessageLoopByThreadPool.cc.i:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/MessageLoopByThreadPool.cc.i
+.PHONY : MessageLoopByThreadPool.cc.i
+
+MessageLoopByThreadPool.s: MessageLoopByThreadPool.cc.s
+
+.PHONY : MessageLoopByThreadPool.s
+
+# target to generate assembly for a file
+MessageLoopByThreadPool.cc.s:
+	cd /root/cpp/Project/build && $(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/MessageLoopByThreadPool.cc.s
+.PHONY : MessageLoopByThreadPool.cc.s
+
 RedisController.o: RedisController.cc.o
 
 .PHONY : RedisController.o
@@ -449,6 +476,9 @@ help:
 	@echo "... GuidUtil.o"
 	@echo "... GuidUtil.i"
 	@echo "... GuidUtil.s"
+	@echo "... MessageLoopByThreadPool.o"
+	@echo "... MessageLoopByThreadPool.i"
+	@echo "... MessageLoopByThreadPool.s"
 	@echo "... RedisController.o"
 	@echo "... RedisController.i"
 	@echo "... RedisController.s"

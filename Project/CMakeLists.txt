@@ -47,6 +47,8 @@ include_directories(${Muduo_INCLUDE_DIR})
 
 ADD_SUBDIRECTORY(./src/base)  # 进入base目录
 
+ADD_SUBDIRECTORY(./src/elasticJob)
+
 
 find_library(muduo_base muduo_base)
 find_library(muduo_net muduo_net)

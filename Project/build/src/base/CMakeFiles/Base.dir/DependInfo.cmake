@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/root/cpp/Project/src/base/DBManager.cc" "/root/cpp/Project/build/src/base/CMakeFiles/Base.dir/DBManager.cc.o"
   "/root/cpp/Project/src/base/Error.cc" "/root/cpp/Project/build/src/base/CMakeFiles/Base.dir/Error.cc.o"
   "/root/cpp/Project/src/base/GuidUtil.cc" "/root/cpp/Project/build/src/base/CMakeFiles/Base.dir/GuidUtil.cc.o"
+  "/root/cpp/Project/src/base/MessageLoopByThreadPool.cc" "/root/cpp/Project/build/src/base/CMakeFiles/Base.dir/MessageLoopByThreadPool.cc.o"
   "/root/cpp/Project/src/base/RedisController.cc" "/root/cpp/Project/build/src/base/CMakeFiles/Base.dir/RedisController.cc.o"
   "/root/cpp/Project/src/base/ThreadUtils.cc" "/root/cpp/Project/build/src/base/CMakeFiles/Base.dir/ThreadUtils.cc.o"
   "/root/cpp/Project/src/base/Time.cc" "/root/cpp/Project/build/src/base/CMakeFiles/Base.dir/Time.cc.o"

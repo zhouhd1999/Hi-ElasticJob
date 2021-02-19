@@ -6,5 +6,5 @@ CXX_FLAGS = -g -Wall -Wextra -Wno-unused-parameter -Wold-style-cast -Woverloaded
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/root/cpp/Project/src/base -I/root/cpp/Common/muduo/build/release-install-cpp11/include -I/root/cpp/Project -I/usr/local/include/mysql++ -I/usr/include/mysql 
+CXX_INCLUDES = -I/root/cpp/Project/src/base -I/root/cpp/Common/muduo/build/release-install-cpp11/include -I/usr/local/include -I/root/cpp/Project -I/usr/local/include/mysql++ -I/usr/include/mysql 
 

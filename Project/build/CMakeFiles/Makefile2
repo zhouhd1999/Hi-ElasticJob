@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /root/cpp/Project/build
 CMakeFiles/TimerTest.dir/all: src/base/CMakeFiles/Base.dir/all
 	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/depend
 	$(MAKE) -f CMakeFiles/TimerTest.dir/build.make CMakeFiles/TimerTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=23,24 "Built target TimerTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=47,48 "Built target TimerTest"
 .PHONY : CMakeFiles/TimerTest.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/TimerTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TimerTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TimerTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/TimerTest.dir/rule
@@ -108,7 +108,7 @@ clean: CMakeFiles/TimerTest.dir/clean
 CMakeFiles/DBCommonTest.dir/all: src/base/CMakeFiles/Base.dir/all
 	$(MAKE) -f CMakeFiles/DBCommonTest.dir/build.make CMakeFiles/DBCommonTest.dir/depend
 	$(MAKE) -f CMakeFiles/DBCommonTest.dir/build.make CMakeFiles/DBCommonTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=13,14 "Built target DBCommonTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=37,38 "Built target DBCommonTest"
 .PHONY : CMakeFiles/DBCommonTest.dir/all
 
 # Include target in all.
@@ -118,7 +118,7 @@ all: CMakeFiles/DBCommonTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DBCommonTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DBCommonTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/DBCommonTest.dir/rule
@@ -145,7 +145,7 @@ clean: CMakeFiles/DBCommonTest.dir/clean
 CMakeFiles/RedisTest.dir/all: src/base/CMakeFiles/Base.dir/all
 	$(MAKE) -f CMakeFiles/RedisTest.dir/build.make CMakeFiles/RedisTest.dir/depend
 	$(MAKE) -f CMakeFiles/RedisTest.dir/build.make CMakeFiles/RedisTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=19,20 "Built target RedisTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=43,44 "Built target RedisTest"
 .PHONY : CMakeFiles/RedisTest.dir/all
 
 # Include target in all.
@@ -155,7 +155,7 @@ all: CMakeFiles/RedisTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RedisTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/RedisTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/RedisTest.dir/rule
@@ -182,7 +182,7 @@ clean: CMakeFiles/RedisTest.dir/clean
 CMakeFiles/hello.dir/all: src/base/CMakeFiles/Base.dir/all
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/depend
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=25,26 "Built target hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=49,50 "Built target hello"
 .PHONY : CMakeFiles/hello.dir/all
 
 # Include target in all.
@@ -192,7 +192,7 @@ all: CMakeFiles/hello.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hello.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hello.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/hello.dir/rule
@@ -219,7 +219,7 @@ clean: CMakeFiles/hello.dir/clean
 CMakeFiles/DBTransactionTest.dir/all: src/base/CMakeFiles/Base.dir/all
 	$(MAKE) -f CMakeFiles/DBTransactionTest.dir/build.make CMakeFiles/DBTransactionTest.dir/depend
 	$(MAKE) -f CMakeFiles/DBTransactionTest.dir/build.make CMakeFiles/DBTransactionTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=15,16 "Built target DBTransactionTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=39,40 "Built target DBTransactionTest"
 .PHONY : CMakeFiles/DBTransactionTest.dir/all
 
 # Include target in all.
@@ -229,7 +229,7 @@ all: CMakeFiles/DBTransactionTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DBTransactionTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DBTransactionTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/DBTransactionTest.dir/rule
@@ -256,7 +256,7 @@ clean: CMakeFiles/DBTransactionTest.dir/clean
 CMakeFiles/GuidTest.dir/all: src/base/CMakeFiles/Base.dir/all
 	$(MAKE) -f CMakeFiles/GuidTest.dir/build.make CMakeFiles/GuidTest.dir/depend
 	$(MAKE) -f CMakeFiles/GuidTest.dir/build.make CMakeFiles/GuidTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=17,18 "Built target GuidTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=41,42 "Built target GuidTest"
 .PHONY : CMakeFiles/GuidTest.dir/all
 
 # Include target in all.
@@ -266,7 +266,7 @@ all: CMakeFiles/GuidTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GuidTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/GuidTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/GuidTest.dir/rule
@@ -293,7 +293,7 @@ clean: CMakeFiles/GuidTest.dir/clean
 CMakeFiles/StringTest.dir/all: src/base/CMakeFiles/Base.dir/all
 	$(MAKE) -f CMakeFiles/StringTest.dir/build.make CMakeFiles/StringTest.dir/depend
 	$(MAKE) -f CMakeFiles/StringTest.dir/build.make CMakeFiles/StringTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=21,22 "Built target StringTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=45,46 "Built target StringTest"
 .PHONY : CMakeFiles/StringTest.dir/all
 
 # Include target in all.
@@ -303,7 +303,7 @@ all: CMakeFiles/StringTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/StringTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/StringTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/StringTest.dir/rule
@@ -348,7 +348,7 @@ src/base/preinstall:
 src/base/CMakeFiles/Base.dir/all:
 	$(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/depend
 	$(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target Base"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target Base"
 .PHONY : src/base/CMakeFiles/Base.dir/all
 
 # Include target in all.
@@ -358,7 +358,7 @@ all: src/base/CMakeFiles/Base.dir/all
 
 # Build rule for subdir invocation for target.
 src/base/CMakeFiles/Base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 src/base/CMakeFiles/Base.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
 .PHONY : src/base/CMakeFiles/Base.dir/rule
@@ -375,6 +375,183 @@ src/base/CMakeFiles/Base.dir/clean:
 
 # clean rule for target.
 clean: src/base/CMakeFiles/Base.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/elasticJob
+
+# Convenience name for "all" pass in the directory.
+src/elasticJob/all: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/all
+src/elasticJob/all: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/all
+src/elasticJob/all: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/all
+src/elasticJob/all: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/all
+
+.PHONY : src/elasticJob/all
+
+# Convenience name for "clean" pass in the directory.
+src/elasticJob/clean: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/clean
+src/elasticJob/clean: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/clean
+src/elasticJob/clean: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/clean
+src/elasticJob/clean: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/clean
+
+.PHONY : src/elasticJob/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/elasticJob/preinstall:
+
+.PHONY : src/elasticJob/preinstall
+
+#=============================================================================
+# Target rules for target src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir
+
+# All Build rule for target.
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/all: src/base/CMakeFiles/Base.dir/all
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/all: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/all
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/depend
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33 "Built target Cyclotronic_ElasticJobService"
+.PHONY : src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/all
+
+# Include target in all.
+all: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 31
+	$(MAKE) -f CMakeFiles/Makefile2 src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
+.PHONY : src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/rule
+
+# Convenience name for target.
+Cyclotronic_ElasticJobService: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/rule
+
+.PHONY : Cyclotronic_ElasticJobService
+
+# clean rule for target.
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/clean:
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/clean
+.PHONY : src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/clean
+
+# clean rule for target.
+clean: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir
+
+# All Build rule for target.
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/all: src/base/CMakeFiles/Base.dir/all
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/all: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/all
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/all: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/all
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/all: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/all
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/depend
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=34,35,36 "Built target Cyclotronic_ElasticJob_ServiceUnittest"
+.PHONY : src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/all
+
+# Include target in all.
+all: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 36
+	$(MAKE) -f CMakeFiles/Makefile2 src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
+.PHONY : src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/rule
+
+# Convenience name for target.
+Cyclotronic_ElasticJob_ServiceUnittest: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/rule
+
+.PHONY : Cyclotronic_ElasticJob_ServiceUnittest
+
+# clean rule for target.
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/clean:
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/clean
+.PHONY : src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/clean
+
+# clean rule for target.
+clean: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir
+
+# All Build rule for target.
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/all:
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/depend
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=14,15,16,17,18 "Built target Cyclotronic_ElasticJobBase"
+.PHONY : src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/all
+
+# Include target in all.
+all: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
+.PHONY : src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/rule
+
+# Convenience name for target.
+Cyclotronic_ElasticJobBase: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/rule
+
+.PHONY : Cyclotronic_ElasticJobBase
+
+# clean rule for target.
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/clean:
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/clean
+.PHONY : src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/clean
+
+# clean rule for target.
+clean: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir
+
+# All Build rule for target.
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/all: src/base/CMakeFiles/Base.dir/all
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/all: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/all
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/depend
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/cpp/Project/build/CMakeFiles --progress-num=19,20 "Built target Cyclotronic_ElasticJobClient"
+.PHONY : src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/all
+
+# Include target in all.
+all: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 20
+	$(MAKE) -f CMakeFiles/Makefile2 src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cpp/Project/build/CMakeFiles 0
+.PHONY : src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/rule
+
+# Convenience name for target.
+Cyclotronic_ElasticJobClient: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/rule
+
+.PHONY : Cyclotronic_ElasticJobClient
+
+# clean rule for target.
+src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/clean:
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/clean
+.PHONY : src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/clean
+
+# clean rule for target.
+clean: src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/clean
 
 .PHONY : clean
 

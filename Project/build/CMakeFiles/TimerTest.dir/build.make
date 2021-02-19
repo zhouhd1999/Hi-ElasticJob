@@ -81,11 +81,11 @@ bin/TimerTest: CMakeFiles/TimerTest.dir/src/base/test/TimerTest.cc.o
 bin/TimerTest: CMakeFiles/TimerTest.dir/build.make
 bin/TimerTest: /root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_net.a
 bin/TimerTest: /root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_base.a
-bin/TimerTest: /usr/lib/x86_64-linux-gnu/libboost_system.so
-bin/TimerTest: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-bin/TimerTest: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-bin/TimerTest: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-bin/TimerTest: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+bin/TimerTest: /usr/local/lib/libboost_system.so
+bin/TimerTest: /usr/local/lib/libboost_thread.so
+bin/TimerTest: /usr/local/lib/libboost_chrono.so
+bin/TimerTest: /usr/local/lib/libboost_date_time.so
+bin/TimerTest: /usr/local/lib/libboost_atomic.so
 bin/TimerTest: lib/libBase.a
 bin/TimerTest: /root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_net.a
 bin/TimerTest: /root/cpp/Common/muduo/build/release-install-cpp11/lib/libmuduo_base.a

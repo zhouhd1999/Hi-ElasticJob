@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.13.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeSystem.cmake"
   "../src/base/CMakeLists.txt"
+  "../src/elasticJob/CMakeLists.txt"
   "/usr/share/cmake-3.13/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.13/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.13/Modules/CMakeGenericSystem.cmake"
@@ -44,6 +45,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/base/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/elasticJob/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -56,4 +58,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/GuidTest.dir/DependInfo.cmake"
   "CMakeFiles/StringTest.dir/DependInfo.cmake"
   "src/base/CMakeFiles/Base.dir/DependInfo.cmake"
+  "src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/DependInfo.cmake"
+  "src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/DependInfo.cmake"
+  "src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/DependInfo.cmake"
+  "src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/DependInfo.cmake"
   )

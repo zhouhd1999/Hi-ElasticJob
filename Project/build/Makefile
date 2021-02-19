@@ -214,6 +214,58 @@ Base/fast:
 	$(MAKE) -f src/base/CMakeFiles/Base.dir/build.make src/base/CMakeFiles/Base.dir/build
 .PHONY : Base/fast
 
+#=============================================================================
+# Target rules for targets named Cyclotronic_ElasticJobService
+
+# Build rule for target.
+Cyclotronic_ElasticJobService: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Cyclotronic_ElasticJobService
+.PHONY : Cyclotronic_ElasticJobService
+
+# fast build rule for target.
+Cyclotronic_ElasticJobService/fast:
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobService.dir/build
+.PHONY : Cyclotronic_ElasticJobService/fast
+
+#=============================================================================
+# Target rules for targets named Cyclotronic_ElasticJob_ServiceUnittest
+
+# Build rule for target.
+Cyclotronic_ElasticJob_ServiceUnittest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Cyclotronic_ElasticJob_ServiceUnittest
+.PHONY : Cyclotronic_ElasticJob_ServiceUnittest
+
+# fast build rule for target.
+Cyclotronic_ElasticJob_ServiceUnittest/fast:
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJob_ServiceUnittest.dir/build
+.PHONY : Cyclotronic_ElasticJob_ServiceUnittest/fast
+
+#=============================================================================
+# Target rules for targets named Cyclotronic_ElasticJobBase
+
+# Build rule for target.
+Cyclotronic_ElasticJobBase: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Cyclotronic_ElasticJobBase
+.PHONY : Cyclotronic_ElasticJobBase
+
+# fast build rule for target.
+Cyclotronic_ElasticJobBase/fast:
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobBase.dir/build
+.PHONY : Cyclotronic_ElasticJobBase/fast
+
+#=============================================================================
+# Target rules for targets named Cyclotronic_ElasticJobClient
+
+# Build rule for target.
+Cyclotronic_ElasticJobClient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Cyclotronic_ElasticJobClient
+.PHONY : Cyclotronic_ElasticJobClient
+
+# fast build rule for target.
+Cyclotronic_ElasticJobClient/fast:
+	$(MAKE) -f src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/build.make src/elasticJob/CMakeFiles/Cyclotronic_ElasticJobClient.dir/build
+.PHONY : Cyclotronic_ElasticJobClient/fast
+
 src/base/test/DBCommonTest.o: src/base/test/DBCommonTest.cc.o
 
 .PHONY : src/base/test/DBCommonTest.o
@@ -419,6 +471,10 @@ help:
 	@echo "... GuidTest"
 	@echo "... StringTest"
 	@echo "... Base"
+	@echo "... Cyclotronic_ElasticJobService"
+	@echo "... Cyclotronic_ElasticJob_ServiceUnittest"
+	@echo "... Cyclotronic_ElasticJobBase"
+	@echo "... Cyclotronic_ElasticJobClient"
 	@echo "... src/base/test/DBCommonTest.o"
 	@echo "... src/base/test/DBCommonTest.i"
 	@echo "... src/base/test/DBCommonTest.s"
