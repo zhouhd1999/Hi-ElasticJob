@@ -46,10 +46,10 @@ Elastic Job又分为Client和Service。
 
 ├── Project  
 │  ├── build  
-│  │  └── bin  **生成的demo都在这个文件夹中**
+│  │  └── bin  **生成的demo都在这个文件夹中** 
 │  ├── src  
-│  │  ├── base  **base库测试**
-│  │  └── Elastic相关代码  **项目核心代码**
+│  │  ├── base  **base库测试** 
+│  │  └── Elastic相关代码  **项目核心代码** 
 │  └── CMakeLists.txt  
 └── README.md  
 
